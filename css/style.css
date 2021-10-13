@@ -193,7 +193,11 @@ small,
 }
 
 .inner-header .breadcrumb {
-  background: #f85a14;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 17, 96, 0.9) 0,
+    rgba(36, 5, 206, 0.94)
+  );
   margin-bottom: 0;
   padding: 18px 0;
   border-radius: 0;
@@ -212,7 +216,7 @@ small,
   color: #212c6b;
 }
 .inner-header .breadcrumb .breadcrumb-item.active {
-  color: #212c6b;
+  color: red;
   font-weight: normal;
 }
 .inner-header .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
@@ -1956,8 +1960,8 @@ ol.list li:last-child {
   margin-bottom: 10px;
 }
 .feature-info-style-3:hover .feature-info-icon {
-  background: #f85a14;
-  color: #ffffff;
+  background: #041160;
+  color: #ffffff !important;
 }
 
 /* Feature Step */
@@ -2779,7 +2783,7 @@ ol.list li:last-child {
 
 /* Vertical  Pills Tab */
 .nav-pills .nav-link {
-  color: #212c6b;
+  color: #212c6b !important;
   font-size: 16px;
   font-weight: 700;
   padding: 13px 25px;
@@ -2789,6 +2793,7 @@ ol.list li:last-child {
 
 .nav-pills .nav-link.active {
   background-color: #f85a14;
+  color: white !important;
 }
 
 .nav-pills .show > .nav-link {
