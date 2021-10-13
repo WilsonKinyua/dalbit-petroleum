@@ -358,6 +358,10 @@ small,
   background-color: #f85a14 !important;
 }
 
+.bg-main-color {
+  background: #041160;
+}
+
 .bg-dark {
   background-color: #212c6b !important;
 }
