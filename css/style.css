@@ -6177,3 +6177,7 @@ a.footer-logo-text:focus {
   letter-spacing: normal;
   color: #de030d;
 }
+
+.space-ptb {
+  padding: 20px 0;
+}
