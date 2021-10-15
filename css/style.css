@@ -2432,7 +2432,7 @@ ol.list li:last-child {
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #ffffff;
+  background: #041160;
   margin-top: -20px;
 }
 .team.team-style-1 .team-info .btn-link {
