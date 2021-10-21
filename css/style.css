@@ -3722,7 +3722,7 @@ ol.list li:last-child {
   transition: none;
 }
 .header .navbar-brand img {
-  height: 30px;
+  height: 60px;
 }
 
 /* Header Sticky */
@@ -3743,7 +3743,7 @@ ol.list li:last-child {
   padding: 12px 0px;
 }
 .header.is-sticky .navbar .navbar-brand img {
-  height: 30px;
+  height: 50px;
 }
 
 .header .navbar-nav li > a {
