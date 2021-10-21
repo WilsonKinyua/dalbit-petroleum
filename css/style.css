@@ -3768,7 +3768,7 @@ ol.list li:last-child {
 
 /* Mega Menu */
 .megamenu {
-  padding: 20px 20px;
+  padding: 15px 15px;
   width: 100%;
 }
 .megamenu > div > li > ul {
@@ -3780,7 +3780,7 @@ ol.list li:last-child {
 }
 .megamenu > div > li > ul > li > a {
   display: block;
-  padding: 3px 20px;
+  padding: 3px 15px;
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
@@ -4073,7 +4073,7 @@ ol.list li:last-child {
     left: 50%;
   }
   .header .navbar .dropdown-menu.dropdown-menu-lg {
-    min-width: 640px;
+    min-width: 600px;
   }
   .header .navbar .dropdown:hover > .dropdown-menu {
     -webkit-transform: translate3d(-50%, 0, 0);
@@ -6162,14 +6162,12 @@ a.footer-logo-text:focus {
 /* about us  */
 .about-us {
   margin-top: 40px;
-  background-image: url('https://www.dalbitpetroleum.com/img/kenya/about.jpg');
+  background-image: url("https://www.dalbitpetroleum.com/img/kenya/about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
 }
-
-
 
 .about-us a {
   font-size: 13px;
