@@ -6182,3 +6182,9 @@ a.footer-logo-text:focus {
 .space-ptb {
   padding: 20px 0;
 }
+
+
+.fa-exclamation-triangle {
+  font-size: 10em;
+  /* color: #041160; */
+}
