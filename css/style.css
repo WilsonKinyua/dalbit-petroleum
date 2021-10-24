@@ -3712,7 +3712,7 @@ ol.list li:last-child {
 }
 
 .header .navbar-brand {
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   margin-right: 0;
   color: #ffffff;
   -webkit-box-flex: 0;
@@ -3722,7 +3722,7 @@ ol.list li:last-child {
   transition: none;
 }
 .header .navbar-brand img {
-  height: 60px;
+  height: 50px;
 }
 
 /* Header Sticky */
@@ -6188,7 +6188,7 @@ a.footer-logo-text:focus {
   font-size: 10em;
   /* color: #041160; */
 }
-/* 
-.tender-img {
-  height: ;
-} */
+
+.header-top {
+  background-color: #ededea;
+}
