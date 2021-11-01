@@ -3872,12 +3872,12 @@ ol.list li:last-child {
   font-size: 13px;
   font-weight: 500;
   padding: 0px;
-  color: #ffffff;
+  color: #333;
   border-radius: 3px;
   position: relative;
 }
 .navbar .dropdown > .dropdown-menu li > a:hover {
-  color: #ffffff;
+  color: #333;
 }
 .navbar .dropdown > .dropdown-menu li > a span {
   padding: 10px 20px;
@@ -3891,7 +3891,7 @@ ol.list li:last-child {
 }
 
 .navbar .dropdown > .dropdown-menu .nav-title {
-  color: #ffffff;
+  color: #333;
   padding: 12px 20px;
 }
 
@@ -3915,7 +3915,7 @@ ol.list li:last-child {
   padding: 10px 0px;
 }
 .header.header-style-02 .navbar .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #333;
 }
 .header.header-style-02 .navbar .dropdown-menu {
   left: 0;
@@ -5317,7 +5317,7 @@ ol.list li:last-child {
 }
 
 .dropdown-menu {
-  background: #091a8a !important;
+  background: #fff !important;
 }
 
 /* Pagination */
