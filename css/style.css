@@ -2422,12 +2422,12 @@ ol.list li:last-child {
   border-radius: 3px;
 }
 .team.team-style-1 .team-info {
-  padding: 20px;
+  padding: 10px;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #041160;
-  margin-top: -20px;
+  background: #ffffff;
+  margin-top: -10px;
 }
 .team.team-style-1 .team-info .btn-link {
   font-size: 12px;
@@ -3676,7 +3676,7 @@ ol.list li:last-child {
 .header .navbar .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 14px;
-  padding: 12px 8px 12px 0;
+  padding: 20px 27px 20px 27px;
   color: #041160;
   text-transform: capitalize;
 }
@@ -3722,7 +3722,7 @@ ol.list li:last-child {
   transition: none;
 }
 .header .navbar-brand img {
-  height: 50px;
+  height: 80px;
 }
 
 /* Header Sticky */
@@ -3962,7 +3962,7 @@ ol.list li:last-child {
   position: absolute;
   text-indent: 0;
   top: 0;
-  color: #041160;
+  color: #ffffff;
 }
 
 .search .search-box button {
@@ -4075,6 +4075,9 @@ ol.list li:last-child {
   .header .navbar .dropdown-menu.dropdown-menu-lg {
     min-width: 600px;
   }
+  .header .navbar .dropdown-menu.about-us-lg {
+    min-width: 430px;
+  }
   .header .navbar .dropdown:hover > .dropdown-menu {
     -webkit-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
@@ -4169,7 +4172,7 @@ ol.list li:last-child {
     margin-right: 0;
   }
   .header.default .navbar .navbar-nav .nav-item.header-search {
-    display: none;
+    margin: 10px;
   }
 }
 
@@ -5314,7 +5317,7 @@ ol.list li:last-child {
 }
 
 .dropdown-menu {
-  background: #041160 !important;
+  background: #091a8a !important;
 }
 
 /* Pagination */
@@ -6182,7 +6185,6 @@ a.footer-logo-text:focus {
 .space-ptb {
   padding: 20px 0;
 }
-
 
 .fa-exclamation-triangle {
   font-size: 10em;
