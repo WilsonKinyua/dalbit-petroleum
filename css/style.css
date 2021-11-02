@@ -4289,15 +4289,24 @@ ol.list li:last-child {
   Banner
 *****************************/
 
-/* .content-bg-card {
+.content-bg-card {
   background: rgba(27, 26, 66, 0.7);
   padding: 2rem 2rem 1rem;
   border-radius: 5px;
-} */
+}
 
 /* .swiper-wrapper {
   opacity: 0.5;
 } */
+
+.text-main-color {
+  color: #041160;
+}
+
+/* .content-bg-card {
+  font-size: 2rem;
+} */
+
 .narrative {
   background-color: #041160;
 }
