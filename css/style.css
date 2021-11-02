@@ -4307,6 +4307,16 @@ ol.list li:last-child {
   font-size: 2rem;
 } */
 
+.social-media-icons ul {
+  display: flex;
+}
+
+.social-media-icons ul li a i {
+  margin-right: 40px;
+  font-size: 1.1em;
+  color: #041160;
+}
+
 .narrative {
   background-color: #041160;
 }
