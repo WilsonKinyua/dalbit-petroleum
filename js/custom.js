@@ -67,9 +67,9 @@
     if (owlslider.length > 0) {
       owlslider.each(function () {
         var $this = $(this),
-          $items = $this.data("items") ? $this.data("items") : 1,
+          $items = $this.data("items") ? $this.data("items") : 4,
           $loop = $this.attr("data-loop") ? $this.data("loop") : true,
-          $navdots = $this.data("nav-dots") ? $this.data("nav-dots") : false,
+          $navdots = $this.data("nav-dots") ? $this.data("nav-dots") : true,
           $navarrow = $this.data("nav-arrow") ? $this.data("nav-arrow") : false,
           $autoplay = $this.attr("data-autoplay")
             ? $this.data("autoplay")
@@ -140,18 +140,23 @@
         loop: true,
         speed: 1000,
         autoplay: {
-          delay: 5000,
+          delay: 10000,
         },
 
         keyboard: {
           enabled: true,
           onlyInViewport: true,
         },
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        dots: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
+        // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

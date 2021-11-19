@@ -15,6 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Roboto+Slab:wght@300;400;500;600;700;800;900&amp;display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 
@@ -30,7 +32,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-xl-3">
             <a class="navbar-brand" href="/">
-              <img class="img-fluid" src="./images/logo.png" alt="logo">
+              <img class="" src="./images/logo.png" alt="logo">
             </a>
           </div>
           <!-- <div class="col-xl-9 d-block d-md-flex justify-content-xl-end justify-content-center">
@@ -56,7 +58,8 @@
               </ul>
             </div>
           </div> -->
-           <div class="col-xl-9 d-block d-md-flex justify-content-xl-end justify-content-center">
+          <!-- #ededea -->
+          <div class="col-xl-9 d-block d-md-flex justify-content-xl-end justify-content-center">
             <div class="d-flex mr-3 mr-md-5">
               <div class="social d-inline-block social-media-icons">
                 <ul class="list-unstyled">
@@ -65,6 +68,15 @@
                   <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
                 </ul>
               </div>
+            </div>
+            <div>
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="navbar-brand jcg" href="/">
+                    <img class="" src="./images/jcg.jpg" alt="logo">
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -79,9 +91,9 @@
         </a>
         <div class="navbar-collapse collapse justify-content-end justify-content-xl-center ">
           <ul class="nav navbar-nav">
-            <li class="nav-item dropdown active">
+            <!-- <li class="nav-item dropdown active">
               <a class="nav-link" href="/" id="navbarDropdown">Home</a>
-            </li>
+            </li> -->
             <li class="dropdown nav-item">
               <a class="nav-link" href="javascript:void(0)" data-toggle="dropdown">About Us
               </a>
@@ -116,8 +128,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="./country.html"><span>Dalbit Affiliates</span></a></li>
-                <li><a class="dropdown-item" href="./comming-soon.html"><span>Dalbit Trading</span></a></li>
-                <li><a class="dropdown-item" href="./licensee.html"><span>Dalbit Licensee</span></a></li>
+                <li><a class="dropdown-item" href="./dalbit-trading.html"><span>Dalbit Trading</span></a></li>
+                <li><a class="dropdown-item" href="./licensee.html"><span>Dalbit Licensees</span></a></li>
               </ul>
             </li>
             <li class="dropdown nav-item">
@@ -131,9 +143,9 @@
                       <p class="p-3">
                         Our Corporate Social Responsibility strategy extends across all aspects of the business from our
                         own operations and subsidiaries to our supply chain.
-                        <a class="dropdown-item mt-4 text-dark" href="sustainability.html"><span> <i
+                        <!-- <a class="dropdown-item mt-4 text-dark" href="sustainability.html"><span> <i
                               class="fa fa-arrow-right"></i>View
-                            Section</span></a>
+                            Section</span></a> -->
                       </p>
                     </div>
                     <div class="col-sm-6">
@@ -257,13 +269,14 @@
             </li>
             <li class="dropdown nav-item header-search">
               <div class="search">
-                <a class="search-btn not_click" href="javascript:void(0);"></a>
+                <input type="text" class="not-click form-control search-button" name="search" placeholder="Search..">
+                <!-- <a class="search-btn not_click" href="javascript:void(0);"></a>
                 <div class="search-box not-click">
                   <form>
                     <input type="text" class="not-click form-control" name="search" placeholder="Search.." autofocus>
                     <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
                   </form>
-                </div>
+                </div> -->
               </div>
             </li>
           </ul>
@@ -287,14 +300,13 @@
                   <div class="content">
                     <h1 class="animated mb-4  h1 text-main-color" data-swiper-animation="fadeInUp" data-duration="2.0s"
                       data-delay="1.0s">We Build <span class="text-primary">Brand</span></h1>
-                    <div class="animated lead " data-swiper-animation="fadeInUp" data-duration="2.0s"
-                      data-delay="1.0s">The sad thing is the majority  of people <br> have no clue about what.</div>
-                    <p class="animated  mt-3 mb-4" data-swiper-animation="fadeInUp" data-duration="2.0s"
-                      data-delay="1.5s">Commitment is something that comes from understanding <br>  that everything has its
-                      price and then having the  willingness to</p>
-                      <br>
-                      <!-- <br>
-                      <br> -->
+                    <div class="animated lead text-main-color" data-swiper-animation="fadeInUp" data-duration="2.0s"
+                      data-delay="1.0s">The sad thing is the majority of people <br> have no clue about what.</div>
+                    <p class="animated  mt-3 mb-4 text-main-color" data-swiper-animation="fadeInUp" data-duration="2.0s"
+                      data-delay="1.5s">Commitment is something that comes from understanding..... <br>
+                      <button class="btn btn-sm btn-primary mt-2">Read More <i
+                          class="btn-icon fas fa-long-arrow-alt-right"></i></button>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -310,11 +322,12 @@
                   <div class="content">
                     <h2 class="animated mb-4 h1" data-swiper-animation="fadeInUp" data-duration="2.0s"
                       data-delay="1.0s">We Build <span class="text-primary">Brand</span></h2>
-                    <div class="animated lead" data-swiper-animation="fadeInUp" data-duration="2.0s"
+                    <div class="animated lead text-main-color" data-swiper-animation="fadeInUp" data-duration="2.0s"
                       data-delay="1.0s">The sad thing is the majority of people <br> have no clue about what.</div>
-                    <p class="animated mt-3 mb-4" data-swiper-animation="fadeInUp" data-duration="2.0s"
-                      data-delay="1.5s">Commitment is something that comes from understanding <br> that everything has its
-                      price and then having the willingness <br> to pay that price.</p>
+                    <p class="animated mt-3 mb-4 text-main-color" data-swiper-animation="fadeInUp" data-duration="2.0s"
+                      data-delay="1.5s">Commitment is something that comes from understanding..... <br> <button
+                        class="btn btn-sm btn-primary mt-2">Read More <i
+                          class="btn-icon fas fa-long-arrow-alt-right"></i></button></p>
                   </div>
                 </div>
               </div>
@@ -328,6 +341,9 @@
           class="fas fa-long-arrow-alt-left"></i></div>
       <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><i
           class="fas fa-long-arrow-alt-right"></i></div> -->
+      <div class="swiper-pagination-left-center">
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
   <!--=================================
@@ -376,8 +392,8 @@
           </div>
         </div>
       </div>
-      <div class="row text-center ">
-        <div class="col-lg-3 col-sm-6 mb-4 pb-2 ">
+      <div class="row text-center owl-carousel">
+        <div class="item">
           <div class="team team-style-1 ">
             <div class="team-img">
               <img class="img-fluid"
@@ -389,7 +405,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4 pb-2">
+        <div class="item">
           <div class="team team-style-1">
             <div class="team-img">
               <img class="img-fluid"
@@ -402,7 +418,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4 pb-2">
+        <div class="item">
           <div class="team team-style-1">
             <div class="team-img">
               <img class="img-fluid"
@@ -414,7 +430,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4 pb-2">
+        <div class="item">
           <div class="team team-style-1">
             <div class="team-img">
               <img class="img-fluid" src="https://cdn.pixabay.com/photo/2021/05/04/12/20/lusaka-6228562_960_720.jpg"
@@ -426,13 +442,26 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 text-center">
+        <div class="item">
+          <div class="team team-style-1">
+            <div class="team-img">
+              <img class="img-fluid"
+                src="https://images.unsplash.com/photo-1526998758291-f87c4c1a8fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80"
+                alt="">
+            </div>
+            <div class="team-info">
+              <h6 class="team-title "><a href="./mozambique.html">Mozambique</a></h6>
+
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-12 text-center">
           <a href="./country.html" class="btn btn-outline-primary  mx-0 mx-md-3">
             <i class="btn-icon fas fa-long-arrow-alt-right"></i>
             <span>View More</span>
           </a>
-        </div>
-        <!-- <div class="col-lg-3 col-sm-6 mb-4 pb-2">
+        </div> -->
+        <!-- <div class="">
           <div class="team team-style-1">
             <div class="team-img">
               <img class="img-fluid"
@@ -470,22 +499,22 @@
           <h6 class="text-uppercase text-white tl-1">Dalbit AT A GLANCE</h6>
         </div>
         <div class="glance-body text-center">
-          <div class="row p-5">
-            <div class="col-md-3 border-right mb-5">
-              <span class="number display-4" data-to="2000" data-speed="1000">2002</span>
+          <div class="row pr-3 pl-3">
+            <div class="col-md-3 border-right pb-2 pt-2">
+              <span class="number display-4 text-primary" data-to="2000" data-speed="1000">2002</span>
               <h4>Founded</h4>
             </div>
-            <div class="col-md-3 border-right mb-5">
-              <span class="number display-4" data-to="10" data-speed="1000">30</span>
-              <h4>Employee</h4>
-            </div>
-            <div class="col-md-3 mb-5">
-              <span class="number display-4" data-to="15" data-speed="1000">7</span>
+            <div class="col-md-3 border-right pb-2 pt-2">
+              <span class="number display-4 text-primary" data-to="10" data-speed="1000">9</span>
               <h4>Countries</h4>
             </div>
-            <div class="col-md-3 border-right mb-5">
-              <span class="number display-4" data-to="15" data-speed="1000">10</span>
-              <h4>Partners</h4>
+            <div class="col-md-3 border-right pb-2 pt-2">
+              <span class="number display-4 text-primary" data-to="15" data-speed="1000">9</span>
+              <h4>Fuel Depots</h4>
+            </div>
+            <div class="col-md-3 border-right pb-2 pt-2">
+              <span class="number display-4 text-primary" data-to="15" data-speed="1000">30</span>
+              <h4>Employees</h4>
             </div>
           </div>
         </div>
@@ -579,7 +608,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="blog-post blog-post-style-2 bg-white">
             <div class="blog-post-image">
-              <img class="img-fluid" src="https://www.dalbitpetroleum.com/news/Dalbit-offers-200000-donation.jpg" alt="">
+              <img class="img-fluid" src="https://www.dalbitpetroleum.com/news/Dalbit-offers-200000-donation.jpg"
+                alt="">
             </div>
             <div class="blog-post-content">
               <div class="blog-post-info">
@@ -611,7 +641,7 @@
       <div class="row mt-4 mt-md-5 ">
         <div class="col-12 d-md-flex justify-content-center align-items-center text-center">
           <p class="mb-3 mb-md-0 mx-0 mx-md-3 text-light">We have articles on a range of topics</p>
-          <a href="#" class="btn btn-outline-primary  mx-0 mx-md-3">
+          <a href="./news.html" class="btn btn-outline-primary  mx-0 mx-md-3">
             <i class="btn-icon fas fa-long-arrow-alt-right"></i>
             <span>View More</span>
           </a>
@@ -647,6 +677,7 @@
               <li><a href="./contact-us.html">Contact Us</a></li>
               <li><a href="#">Cookies Policy</a></li>
               <li><a href="#">Privacy Policy</a></li>
+              <li><a href="./our-policies.html">Our policies</a></li>
             </ul>
           </div>
         </div>
@@ -662,7 +693,9 @@
       <div class="row">
         <div class="col-sm-12 mt-4 mt-sm-5 text-center">
           <p class="mb-0 text-white mt-4">©Copyright 2021 <a class="text-primary footer-logo-text" href="/">
-              Dalbit Petroleum </a> All Rights Reserved</p>
+              Dalbit Petroleum </a> All Rights Reserved | <a href="#" class="text-primary footer-logo-text">Terms and
+              Conditions</a> | <a href="#" class="text-primary footer-logo-text">Cookie Policy</a> | <a href="#"
+              class="text-primary footer-logo-text">Privacy Policy</a></p>
         </div>
       </div>
     </div>
@@ -697,9 +730,15 @@
   <script src="js/easy-pie-chart/easy-pie-chart.js"></script>
   <script src="js/apexcharts/apexcharts.min.js"></script>
   <script src="js/apexcharts/charts.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
   <!--  Scripts -->
   <script src="js/custom.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+      
+    });
+  </script> -->
 </body>
 
 
