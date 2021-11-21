@@ -3047,7 +3047,7 @@ ol.list li:last-child {
   cursor: pointer;
 }
 .owl-carousel .owl-dots .owl-dot span {
-  background: rgb(255, 172, 32);
+  background: #041160;
   display: block;
   width: 14px;
   height: 14px;
@@ -3059,11 +3059,11 @@ ol.list li:last-child {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 100px;
-  border: 2px solid rgb(255, 172, 32);
+  border: 2px solid #041160;
 }
 .owl-carousel .owl-dots .owl-dot.active span {
-  background-color: rgb(255, 172, 32);
-  border: 2px solid rgb(255, 172, 32);
+  background-color: #041160;
+  border: 2px solid #041160;
 }
 
 .owl-carousel .owl-dot {
@@ -4452,7 +4452,7 @@ color: #041160 !important;
   position: relative;
 }
 .swiper-pagination-left-center .swiper-pagination .swiper-pagination-bullet {
-  background: #ffac20;
+  background: #041160;
   /* display: block; */
   width: 17px;
   height: 17px;
@@ -4464,15 +4464,15 @@ color: #041160 !important;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 100px;
-  border: 3px solid #ffac20;
+  border: 3px solid #041160;
   outline: none;
   font-weight: 800;
 }
 .swiper-pagination-left-center
   .swiper-pagination
   .swiper-pagination-bullet-active {
-  background-color: #ffac20;
-  border: 3px solid #ffac20;
+  background-color: #041160;
+  border: 3px solid #041160;
 }
 
 /* Arrow */
@@ -6275,7 +6275,7 @@ a.footer-logo-text:focus {
   border: 12px solid #fff !important;
 }
 
-button {
+button,a.btn {
   border-radius: 9999px !important;
 }
 
