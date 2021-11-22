@@ -3049,8 +3049,8 @@ ol.list li:last-child {
 .owl-carousel .owl-dots .owl-dot span {
   background: #041160;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
   margin: 0px 4px;
   text-align: center;
   opacity: 1;
@@ -3062,8 +3062,8 @@ ol.list li:last-child {
   border: 2px solid #041160;
 }
 .owl-carousel .owl-dots .owl-dot.active span {
-  background-color: #041160;
-  border: 2px solid #041160;
+  background-color: #ffac20;
+  border: 2px solid #ffac20;
 }
 
 .owl-carousel .owl-dot {
@@ -4454,8 +4454,8 @@ color: #041160 !important;
 .swiper-pagination-left-center .swiper-pagination .swiper-pagination-bullet {
   background: #041160;
   /* display: block; */
-  width: 17px;
-  height: 17px;
+  width: 11px;
+  height: 11px;
   margin: 10px 4px;
   text-align: center;
   opacity: 1;
@@ -6284,4 +6284,9 @@ button,a.btn {
   color: #fff;
   margin-left: -30px;
   margin-top: 12px;
+}
+
+.slider-01 .lead {
+  font-weight: bold;
+  font-size: 2.5em;
 }
