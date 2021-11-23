@@ -4343,9 +4343,14 @@ color: #041160 !important;
   font-size: 48px;
   line-height: 48px;
 }
+
 .slider-01 .swiper-slide .lead {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.slider-01 .slider-button {
+  width: 200px;
 }
 
 .slider-01 .swiper-pagination .swiper-pagination-bullet {

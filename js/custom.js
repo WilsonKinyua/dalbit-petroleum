@@ -115,8 +115,8 @@
           margin: $space,
           nav: $navarrow,
           navText: [
-            "<i class='fas fa-long-arrow-alt-left'></i>",
             "<i class='fas fa-long-arrow-alt-right'></i>",
+            "<i class='fas fa-long-arrow-alt-left'></i>",
           ],
           autoplay: $autoplay,
           autoplayHoverPause: true,
