@@ -4086,7 +4086,8 @@ color: #041160 !important;
     min-width: 600px;
   }
   .header .navbar .dropdown-menu.about-us-lg {
-    min-width: 430px;
+    min-width: 500px;
+    margin-left: 150px;
   }
   .header .navbar .dropdown:hover > .dropdown-menu {
     -webkit-transform: translate3d(-50%, 0, 0);
