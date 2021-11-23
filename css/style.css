@@ -6307,3 +6307,7 @@ button,a.btn {
 .header-search {
   margin-left: 40px;
 }
+
+.text-bold {
+  font-weight: 900;
+}
