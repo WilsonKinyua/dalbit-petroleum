@@ -6395,3 +6395,7 @@ a.btn {
 .fa-twitter,.fa-linkedin-in {
   font-size: 17px !important;
 }
+
+.text-underline {
+  text-decoration: underline;
+}
