@@ -4109,6 +4109,9 @@ ol.list li:last-child {
     margin-top: -6px;
   }
 }
+.navbar-collapse {
+  margin-left: -34px;
+}
 
 @media (max-width: 1199px) {
   /* Header */
@@ -4796,6 +4799,7 @@ ol.list li:last-child {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 30px;
+    margin-left: 3px;
   }
   .slider-01 .swiper-slide p {
     display: none;
@@ -5162,7 +5166,7 @@ ol.list li:last-child {
   }
 
   .header .navbar .navbar-nav .nav-item .nav-link {
-    margin-right: 1px;
+    margin-right: 26px;
     margin-left: 2px;
   }
 }
