@@ -18,11 +18,11 @@ table.dataTable tbody th.select-checkbox::after {
 .dataTables_filter,
 .dt-buttons {
     margin-bottom: 0.333em;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
 }
 
 .dataTables_filter {
-    margin-right: .2rem;
+    margin-right: 0.2rem;
 }
 
 .dt-buttons .btn {
@@ -79,7 +79,7 @@ table.dataTable thead .sorting_desc {
 
 .btn-default.focus,
 .btn-default:focus {
-    box-shadow: 0 0 0 .2rem rgba(209, 213, 215, .5);
+    box-shadow: 0 0 0 0.2rem rgba(209, 213, 215, 0.5);
 }
 
 .btn-default:hover {
@@ -100,12 +100,12 @@ table.dataTable thead .sorting_desc {
     font-weight: bold;
 }
 .searchable-fields {
-    padding-left:5px;
+    padding-left: 5px;
 }
 .searchable-link {
-    padding:0 5px 0 5px;
+    padding: 0 5px 0 5px;
 }
-.searchable-link:hover   {
+.searchable-link:hover {
     cursor: pointer;
     background: #eaeaea;
 }
@@ -129,4 +129,39 @@ table.dataTable thead .sorting_desc {
 
 .custom-select.form-control-sm {
     padding: 0.25rem 1.5rem;
+}
+.c-sidebar {
+    background-color: #041160 !important;
+}
+.btn-success,
+.btn-info {
+    background-color: #041160 !important;
+    border-color: #041160;
+}
+.text-primary {
+    color: #ffac20 !important;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-dark {
+    color: #041160 !important;
+}
+
+.text-light {
+    color: rgb(123, 123, 123) !important;
+}
+
+.text-light-gray {
+    color: rgb(123, 123, 123) !important;
+}
+
+.text-muted {
+    color: #999999 !important;
+}
+
+.text-body {
+    color: rgb(123, 123, 123) !important;
 }

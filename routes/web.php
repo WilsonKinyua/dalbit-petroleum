@@ -1,6 +1,12 @@
 <?php
 
-Route::redirect('/', '/login');
+
+
+// public routes
+Route::get('/','Publics\HomepageController@index')->name('public.home');
+// Route::get('/','Publics\HomepageController@index')->name('division.country');
+
+// Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
         return redirect()->route('admin.home')->with('status', session('status'));
@@ -11,6 +17,8 @@ Route::get('/home', function () {
 
 Auth::routes(['register' => false]);
 
+
+// private routes
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
     Route::get('/', 'HomeController@index')->name('home');
     // Permissions

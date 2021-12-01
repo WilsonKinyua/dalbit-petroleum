@@ -49,7 +49,7 @@
                                 {{ $slider->id ?? '' }}
                             </td>
                             <td>
-                                {{ $slider->caption ?? '' }}
+                                {!! $slider->caption ?? '' !!}
                             </td>
                             <td>
                                 {{ $slider->link ?? '' }}
@@ -62,11 +62,11 @@
                                 @endif
                             </td>
                             <td>
-                                @can('slider_show')
+                                {{-- @can('slider_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.sliders.show', $slider->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+                                @endcan --}}
 
                                 @can('slider_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.sliders.edit', $slider->id) }}">
@@ -132,7 +132,7 @@
 
   $.extend(true, $.fn.dataTable.defaults, {
     orderCellsTop: true,
-    order: [[ 1, 'desc' ]],
+    order: [[ 1, 'asc' ]],
     pageLength: 100,
   });
   let table = $('.datatable-Slider:not(.ajaxTable)').DataTable({ buttons: dtButtons })
@@ -140,7 +140,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 })
 
 </script>
