@@ -6,7 +6,7 @@
               <div class="row d-flex align-items-center">
                   <div class="col-xl-3">
                       <a class="navbar-brand " href="/">
-                          <img class="" src="./images/logo.png" alt="logo">
+                          <img class="" src="{{ asset('images/logo.png')}}" alt="logo">
                       </a>
                   </div>
                   <div class="col-xl-9 d-block d-md-flex justify-content-xl-end justify-content-center">
@@ -23,7 +23,7 @@
                           <ul class="nav navbar-nav">
                               <li class="nav-item">
                                   <a target="_blank" class="navbar-brand jcg" href="https://www.januscontinental.com/">
-                                      <img class="" src="./images/jcg.jpg" alt="logo">
+                                      <img class="" src="{{ asset('images/jcg.jpg')}}" alt="logo">
                                   </a>
                               </li>
                           </ul>
@@ -37,7 +37,7 @@
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"><i
                       class="fas fa-align-left"></i></button>
               <a class="navbar-brand small-device-display" href="/">
-                  <img class="img-fluid" src="./images/logo.png" alt="logo">
+                  <img class="img-fluid" src="{{ asset('images/logo.png')}}" alt="logo">
               </a>
               <div class="navbar-collapse collapse justify-content-end justify-content-xl-center ">
                   <ul class="nav navbar-nav">
@@ -82,7 +82,7 @@
                               <!-- <i class="fas fa-chevron-down fa-xs"></i> -->
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="./country.html"><span>Dalbit Affiliates</span></a>
+                              <li><a class="dropdown-item" href="{{ route('affiliates.division')}}"><span>Dalbit Affiliates</span></a>
                               </li>
                               <li><a class="dropdown-item" href="./dalbit-trading.html"><span>Dalbit Trading</span></a>
                               </li>

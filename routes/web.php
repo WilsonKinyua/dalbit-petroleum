@@ -3,8 +3,9 @@
 
 
 // public routes
-Route::get('/','Publics\HomepageController@index')->name('public.home');
-// Route::get('/','Publics\HomepageController@index')->name('division.country');
+Route::get('/', 'Publics\HomepageController@index')->name('public.home');
+Route::get('dalbit-affiliates', 'Publics\HomepageController@dalbitAffiliates')->name('affiliates.division');
+Route::get('country/{slug}', 'Publics\HomepageController@division')->name('division.country');
 
 // Route::redirect('/', '/login');
 Route::get('/home', function () {

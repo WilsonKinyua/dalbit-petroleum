@@ -37,6 +37,7 @@ class Division extends Model implements HasMedia
         'country_description',
         'operation_description',
         'transport_description',
+        'slug',
         'infrastructure_storage_description',
         'contacts_id',
         'created_at',
@@ -116,5 +117,16 @@ class Division extends Model implements HasMedia
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
+    }
+
+    // check if the division slug is unique
+    public function isUniqueSlug($slug)
+    {
+        $division = Division::where('slug', $slug)->first();
+        if ($division) {
+            return false;
+        }
+
+        return true;
     }
 }

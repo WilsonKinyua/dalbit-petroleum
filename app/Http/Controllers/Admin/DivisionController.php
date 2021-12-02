@@ -15,6 +15,7 @@ use Gate;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Str;
 
 class DivisionController extends Controller
 {
@@ -51,6 +52,14 @@ class DivisionController extends Controller
     public function store(StoreDivisionRequest $request)
     {
         $division = Division::create($request->all());
+        $country_name = Country::find($request->country_id)->name;
+        $division->slug = Str::of($country_name)->slug('-');
+        if (Division::where('slug', $division->slug)->exists()) {
+            $division->slug = (Str::of(Category::find($request->division_type_id)->title)->slug('-')) . '-' . $division->slug;
+        } else {
+            $division->slug = $division->slug;
+        }
+        $division->save();
 
         if ($request->input('country_image', false)) {
             $division->addMedia(storage_path('tmp/uploads/' . basename($request->input('country_image'))))->toMediaCollection('country_image');

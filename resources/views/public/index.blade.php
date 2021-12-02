@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="team-info bg-color-main ">
                                     <h6 class="team-title">
-                                        <a href="./kenya.html">{{ $division->country->name ?? '' }}</a>
+                                        <a href="{{ route('division.country',$division->slug )}}">{{ $division->country->name ?? '' }}</a>
                                     </h6>
                                 </div>
                             </div>

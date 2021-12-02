@@ -157,7 +157,7 @@ class HomeController
             'fields'                => [
                 'title'      => '',
                 'location'   => '',
-                'image'      => '',
+                // 'image'      => '',
                 'created_at' => '',
             ],
             'translation_key' => 'newsroom',
