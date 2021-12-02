@@ -12,6 +12,7 @@ use Gate;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Str;
 
 class SocialResponsibilityController extends Controller
 {
@@ -36,6 +37,17 @@ class SocialResponsibilityController extends Controller
     public function store(StoreSocialResponsibilityRequest $request)
     {
         $socialResponsibility = SocialResponsibility::create($request->all());
+
+        // create a slug for the social responsibility
+        $socialResponsibility->slug = Str::of($socialResponsibility->title)->slug('-');
+        // check if the slug exists
+        $checkSlug = SocialResponsibility::where('slug', $socialResponsibility->slug)->first();
+        // if the slug exists, add id to slug
+        if ($checkSlug) {
+            $socialResponsibility->slug = $socialResponsibility->slug . '-' . $socialResponsibility->id;
+        }
+        // save the slug
+        $socialResponsibility->save();
 
         if ($request->input('image', false)) {
             $socialResponsibility->addMedia(storage_path('tmp/uploads/' . basename($request->input('image'))))->toMediaCollection('image');

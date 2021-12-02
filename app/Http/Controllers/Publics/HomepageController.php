@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Division;
 use App\Models\Newsroom;
 use App\Models\Slider;
+use App\Models\SocialResponsibility;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
@@ -24,21 +25,19 @@ class HomepageController extends Controller
         return view('public.index', compact('sliders', 'divisions', 'newsrooms'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    // about us
+    public function aboutUs()
     {
-        //
+        return view('public.about-us');
     }
 
     // single division using slug
     public function division($slug)
     {
         $division = Division::where('slug', $slug)->with(['division_type', 'country', 'contacts', 'media'])->first();
+        if (!$division) {
+            abort(404);
+        }
         return view('public.division', compact('division'));
     }
 
@@ -47,5 +46,37 @@ class HomepageController extends Controller
     {
         $divisions = Division::where('division_type_id', 1)->with(['division_type', 'country', 'contacts', 'media'])->get();
         return view('public.dalbit-affiliates', compact('divisions'));
+    }
+
+    // affiliates
+    public function dalbitTrading()
+    {
+        $divisions = Division::where('division_type_id', 2)->with(['division_type', 'country', 'contacts', 'media'])->get();
+        return view('public.dalbit-trading', compact('divisions'));
+    }
+
+    // lincensees
+    public function dalbitLicensees()
+    {
+        $divisions = Division::where('division_type_id', 3)->with(['division_type', 'country', 'contacts', 'media'])->get();
+        return view('public.dalbit-lincensees', compact('divisions'));
+    }
+
+    // social responsibility
+    public function socialResponsibility()
+    {
+        $socialResponsibilities = SocialResponsibility::with(['media'])->get();
+        return view('public.social-responsibility', compact('socialResponsibilities'));
+    }
+
+    // our pillars
+    public function ourPillars($slug)
+    {
+        $socialResponsibility = SocialResponsibility::where('slug', $slug)->with(['media'])->first();
+        // if none found return 404 page
+        if (!$socialResponsibility) {
+            abort(404);
+        }
+        return view('public.our-pillars', compact('socialResponsibility'));
     }
 }

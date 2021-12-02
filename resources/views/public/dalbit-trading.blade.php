@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title')
-    - Dalbit Affiliates
+    - Dalbit Trading
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-white text-uppercase">Dalbit Affiliates</h1>
+                        <h1 class="text-white text-uppercase">Dalbit Trading</h1>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <div class="col-lg-12">
                         <ol class="breadcrumb-list list-unstyled d-flex">
                             <li class="breadcrumb-item"><a href="/"><i class="fas fa-home mr-2"></i>Home</a></li>
-                            <li class="breadcrumb-item active"><span>Dalbit Affiliates</span></li>
+                            <li class="breadcrumb-item active"><span>Dalbit Trading</span></li>
                         </ol>
                     </div>
                 </div>

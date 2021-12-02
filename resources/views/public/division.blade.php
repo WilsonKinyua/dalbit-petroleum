@@ -7,7 +7,7 @@
 @section('content')
 
     <!--=================================
-                            Inner Header -->
+                                    Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
             style="background-image: url(https://res.cloudinary.com/developerwilson/image/upload/v1634117946/dalbit/MicrosoftTeams-image_6_2_ucfywv.jpg);">
@@ -25,7 +25,15 @@
                     <div class="col-lg-12">
                         <ol class="breadcrumb-list list-unstyled d-flex">
                             <li class="breadcrumb-item"><a href="/"><i class="fas fa-home mr-2"></i>Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('affiliates.division')}}">Dalbit Affiliates</a></li>
+                            <li class="breadcrumb-item">
+                                @if ($division->division_type_id == 1)
+                                    <a href="{{ route('affiliates.division') }}">Dalbit Affiliates</a>
+                                @elseif ($division->division_type_id == 2)
+                                    <a href="{{ route('trading.division') }}">Dalbit Trading</a>
+                                @elseif ($division->division_type_id == 3)
+                                    <a href="{{ route('licensees.division') }}">Dalbit Licensees</a>
+                                @endif
+                            </li>
                             <li class="breadcrumb-item active text-capitalize"><span>Dalbit
                                     {{ $division->country->name ?? '' }}</span></li>
                         </ol>
@@ -35,10 +43,10 @@
         </div>
     </div>
     <!--=================================
-                              Inner Header -->
+                                      Inner Header -->
 
     <!--=================================
-                              About us  -->
+                                      About us  -->
     <section class="space-ptb">
         <div class="container">
             <div class="row d-flex align-content-center flex-wrap">
@@ -75,10 +83,10 @@
         </div>
     </section>
     <!--=================================
-                              About us  -->
+                                      About us  -->
 
     <!--=================================
-                              operations -->
+                                      operations -->
     <section class="space-ptb">
         <div class="container">
             <div class="row justify-content-center">

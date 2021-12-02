@@ -44,7 +44,7 @@
                             </a>
                         </li>
                     @endcan
-                    @can('category_access')
+                    {{-- @can('category_access')
                         <li class="c-sidebar-nav-item">
                             <a href="{{ route("admin.categories.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/categories") || request()->is("admin/categories/*") ? "c-active" : "" }}">
                                 <i class="fa-fw fas fa-pen c-sidebar-nav-icon">
@@ -53,7 +53,7 @@
                                 {{ trans('cruds.category.title') }}
                             </a>
                         </li>
-                    @endcan
+                    @endcan --}}
                     @can('division_access')
                         <li class="c-sidebar-nav-item">
                             <a href="{{ route("admin.divisions.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/divisions") || request()->is("admin/divisions/*") ? "c-active" : "" }}">

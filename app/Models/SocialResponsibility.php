@@ -30,6 +30,7 @@ class SocialResponsibility extends Model implements HasMedia
 
     protected $fillable = [
         'title',
+        'slug',
         'description',
         'created_at',
         'updated_at',

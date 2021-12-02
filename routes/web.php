@@ -4,9 +4,13 @@
 
 // public routes
 Route::get('/', 'Publics\HomepageController@index')->name('public.home');
+Route::get('about-us', 'Publics\HomepageController@aboutUs')->name('about.us');
 Route::get('dalbit-affiliates', 'Publics\HomepageController@dalbitAffiliates')->name('affiliates.division');
+Route::get('dalbit-trading', 'Publics\HomepageController@dalbitTrading')->name('trading.division');
+Route::get('dalbit-licensees', 'Publics\HomepageController@dalbitLicensees')->name('licensees.division');
 Route::get('country/{slug}', 'Publics\HomepageController@division')->name('division.country');
-
+Route::get('social-responsibility', 'Publics\HomepageController@socialResponsibility')->name('social.responsibility');
+Route::get('social-responsibility/{slug}', 'Publics\HomepageController@ourPillars')->name('our.pillars');
 // Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {

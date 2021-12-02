@@ -7,8 +7,8 @@
                  <h6 class="text-white mb-2 mb-sm-4">More about Dalbit</h6>
                  <div class="footer-link">
                      <ul class="list-unstyled mb-0">
-                         <li><a href="./about-us.html">About Us</a></li>
-                         <li><a href="./health.html">Social Responsibility</a></li>
+                         <li><a href="{{ route('about.us') }}">About Us</a></li>
+                         <li><a href="{{ route('social.responsibility') }}">Social Responsibility</a></li>
                          <li><a href="./careers.html">Careers</a></li>
                          <li><a href="./news.html">Newsroom</a></li>
                      </ul>

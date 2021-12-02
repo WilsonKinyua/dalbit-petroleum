@@ -1,19 +1,19 @@
 @extends('layouts.public')
 
 @section('title')
-    - Dalbit Affiliates
+    - Dalbit Licensees
 @endsection
 
 @section('content')
     <!--=================================
-                                        Inner Header -->
+                                            Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
             style="background-image: url(https://res.cloudinary.com/developerwilson/image/upload/v1634117946/dalbit/MicrosoftTeams-image_6_2_ucfywv.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-white text-uppercase">Dalbit Affiliates</h1>
+                        <h1 class="text-white text-uppercase">Dalbit Licensees</h1>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <div class="col-lg-12">
                         <ol class="breadcrumb-list list-unstyled d-flex">
                             <li class="breadcrumb-item"><a href="/"><i class="fas fa-home mr-2"></i>Home</a></li>
-                            <li class="breadcrumb-item active"><span>Dalbit Affiliates</span></li>
+                            <li class="breadcrumb-item active"><span>Dalbit Licensees</span></li>
                         </ol>
                     </div>
                 </div>

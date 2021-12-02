@@ -53,7 +53,7 @@
                                               Dalbit is a member of JCG Holdings Ltd. Established in 2002 in Kenya, we
                                               supply and distribute
                                               petroleum products and services across East, Central and Southern Africa.
-                                              <a href="./about-us.html" class="btn btn-sm btn-primary mt-2">
+                                              <a href="{{ route('about.us')}}" class="btn btn-sm btn-primary mt-2">
                                                   Read More <br>
                                                   <i class="btn-icon change-on-hover"> Read More <i
                                                           class="fas fa-long-arrow-alt-right"></i></i>
@@ -63,14 +63,14 @@
                                       <div class="col-sm-6">
                                           <h6 class="mb-0 mt-lg-1 nav-title">Who we are</h6>
                                           <ul class="list-unstyled mt-lg-1">
-                                              <li><a class="dropdown-item" href="./about-us.html"><span>About
+                                              <li><a class="dropdown-item" href="{{ route('about.us')}}"><span>About
                                                           Us</span></a></li>
-                                              <li><a class="dropdown-item" href="./about-us.html"><span>Vision &
+                                              <li><a class="dropdown-item" href="{{ route('about.us')}}"><span>Vision &
                                                           Mission</span></a></li>
-                                              <li><a class="dropdown-item" href="./about-us.html"><span>Our
+                                              <li><a class="dropdown-item" href="{{ route('about.us')}}"><span>Our
                                                           Values</span></a></li>
                                               <li><a class="dropdown-item"
-                                                      href="./about-us.html#partners"><span>Partners</span></a></li>
+                                                      href="{{ route('about.us')}}#partners"><span>Partners</span></a></li>
                                           </ul>
                                       </div>
                                   </div>
@@ -82,11 +82,11 @@
                               <!-- <i class="fas fa-chevron-down fa-xs"></i> -->
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="{{ route('affiliates.division')}}"><span>Dalbit Affiliates</span></a>
+                              <li><a class="dropdown-item" href="{{ route('affiliates.division')}} "><span>Dalbit Affiliates</span></a>
                               </li>
-                              <li><a class="dropdown-item" href="./dalbit-trading.html"><span>Dalbit Trading</span></a>
+                              <li><a class="dropdown-item" href="{{ route('trading.division')}} "><span>Dalbit Trading</span></a>
                               </li>
-                              <li><a class="dropdown-item" href="./licensee.html"><span>Dalbit Licensees</span></a>
+                              <li><a class="dropdown-item" href="{{ route('licensees.division')}} "><span>Dalbit Licensees</span></a>
                               </li>
                           </ul>
                       </li>
@@ -103,7 +103,7 @@
                                               We believe that our investment in people and communities serves as a
                                               catalyst in unlocking the
                                               great potential of Africa.
-                                              <a href="./social-responsibility.html"
+                                              <a href="{{ route('social.responsibility')}}"
                                                   class="btn btn-sm btn-primary mt-2">
                                                   Read More
                                                   <i class="btn-icon change-on-hover"> Read More <i
@@ -115,16 +115,15 @@
                                           <h6 class="mb-0 mt-lg-2 nav-title text-capitalize">Our Pillars</h6>
                                           <ul class="list-unstyled mt-lg-1 ">
                                               <li><a class="dropdown-item word-capitalize"
-                                                      href="./health.html"><span>Health</span></a></li>
+                                                      href="{{ route('our.pillars','health')}}"><span>Health</span></a></li>
                                               <li><a class="dropdown-item word-capitalize"
-                                                      href="./education.html"><span>Education</span></a>
-                                              </li>
-
-                                              <li><a class="dropdown-item word-capitalize"
-                                                      href="./health.html"><span>Conservation</span></a>
+                                                      href="{{route('our.pillars','education')}}"><span>Education</span></a>
                                               </li>
                                               <li><a class="dropdown-item word-capitalize"
-                                                      href="./health.html"><span>Community</span></a>
+                                                      href="{{route('our.pillars','conservation')}}"><span>Conservation</span></a>
+                                              </li>
+                                              <li><a class="dropdown-item word-capitalize"
+                                                      href="{{route('our.pillars','community')}}"><span>Community</span></a>
                                               </li>
                                           </ul>
                                       </div>
