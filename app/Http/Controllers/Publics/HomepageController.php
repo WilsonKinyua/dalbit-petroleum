@@ -79,4 +79,58 @@ class HomepageController extends Controller
         }
         return view('public.our-pillars', compact('socialResponsibility'));
     }
+
+    // careers page
+    public function Careers()
+    {
+        return view('public.careers');
+    }
+
+    // news
+    public function news()
+    {
+        $newsrooms = Newsroom::with(['media'])->get();
+        return view('public.newsroom', compact('newsrooms'));
+    }
+
+    // news single
+    public function newsSingle($slug)
+    {
+        $newsroom = Newsroom::where('slug', $slug)->with(['media'])->first();
+        // if none found return 404 page
+        if (!$newsroom) {
+            abort(404);
+        }
+        return view('public.newsroom-single', compact('newsroom'));
+    }
+
+    // contact us
+    public function contactUs()
+    {
+        return view('public.contact-us');
+    }
+
+    // ourPolicies
+    public function ourPolicies()
+    {
+        return view('public.our-policies');
+    }
+
+    // resources
+    public function resources()
+    {
+        return view('public.resources');
+    }
+
+    // privacyPolicy
+    public function privacyPolicy()
+    {
+        return view('public.privacy-policy');
+    }
+
+    // cookies
+    public function cookies()
+    {
+        return view('public.cookies');
+    }
 }

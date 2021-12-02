@@ -30,6 +30,7 @@ class Newsroom extends Model implements HasMedia
 
     protected $fillable = [
         'title',
+        'slug',
         'location',
         'description',
         'created_at',

@@ -13,9 +13,9 @@
                       <div class="d-flex mr-3 mr-md-5">
                           <div class="social d-inline-block social-media-icons">
                               <ul class="list-unstyled">
-                                  <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                                  <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                                  <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
+                                  <li><a target="_blank" href="https://www.facebook.com/dalbitpetroleum"> <i class="fab fa-facebook-f"></i> </a></li>
+                                  <li><a target="_blank" href="https://twitter.com/dalbitpetroleum"> <i class="fab fa-twitter"></i> </a></li>
+                                  <li><a target="_blank" href="https://www.linkedin.com/company/dalbit/"> <i class="fab fa-linkedin-in"></i> </a></li>
                               </ul>
                           </div>
                       </div>
@@ -132,15 +132,15 @@
                           </ul>
                       </li>
                       <li class="dropdown nav-item">
-                          <a class="nav-link" href="./careers.html">Careers
+                          <a class="nav-link" href="{{ route('careers.us') }}">Careers
                           </a>
                       </li>
                       <li class="dropdown nav-item">
-                          <a class="nav-link" href="./news.html">Newsroom
+                          <a class="nav-link" href="{{ route('top.news') }}">Newsroom
                           </a>
                       </li>
                       <li class="dropdown nav-item">
-                          <a class="nav-link" href="./contact-us.html">Contact Us
+                          <a class="nav-link" href="{{ route('contact.us') }}">Contact Us
                           </a>
                       </li>
                       <li class="dropdown nav-item header-search">

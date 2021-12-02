@@ -12,6 +12,7 @@ use Gate;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Str;
 
 class NewsroomController extends Controller
 {
@@ -37,6 +38,10 @@ class NewsroomController extends Controller
     {
         $newsroom = Newsroom::create($request->all());
 
+        // add slug
+        $newsroom->slug = Str::of($newsroom->title)->slug('-');
+        $newsroom->save();
+
         if ($request->input('image', false)) {
             $newsroom->addMedia(storage_path('tmp/uploads/' . basename($request->input('image'))))->toMediaCollection('image');
         }
@@ -58,6 +63,8 @@ class NewsroomController extends Controller
     public function update(UpdateNewsroomRequest $request, Newsroom $newsroom)
     {
         $newsroom->update($request->all());
+
+
 
         if ($request->input('image', false)) {
             if (!$newsroom->image || $request->input('image') !== $newsroom->image->file_name) {

@@ -11,6 +11,16 @@ Route::get('dalbit-licensees', 'Publics\HomepageController@dalbitLicensees')->na
 Route::get('country/{slug}', 'Publics\HomepageController@division')->name('division.country');
 Route::get('social-responsibility', 'Publics\HomepageController@socialResponsibility')->name('social.responsibility');
 Route::get('social-responsibility/{slug}', 'Publics\HomepageController@ourPillars')->name('our.pillars');
+Route::get('careers', 'Publics\HomepageController@Careers')->name('careers.us');
+Route::get('news', 'Publics\HomepageController@news')->name('top.news');
+Route::get('news/{slug}', 'Publics\HomepageController@newsSingle')->name('news.single');
+Route::get('contact-us', 'Publics\HomepageController@contactUs')->name('contact.us');
+Route::get('our-policies', 'Publics\HomepageController@ourPolicies')->name('our.policies');
+Route::get('resources', 'Publics\HomepageController@resources')->name('resources');
+Route::get('privacy-policy', 'Publics\HomepageController@privacyPolicy')->name('privacy.policy');
+Route::get('cookies', 'Publics\HomepageController@cookies')->name('cookies');
+
+
 // Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {

@@ -115,12 +115,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- ============================== glance box =========================== -->
-
-    <!--=================================
-                                        Latest News -->
     <section class="space-ptb mt-4">
         <div class="container">
             <div class="row justify-content-center">
@@ -144,7 +138,7 @@
                                 <div class="blog-post-content">
                                     <div class="blog-post-details">
                                         <h6 class="blog-post-title mb-0 text-primary">
-                                            <a href="#">{{ $newsroom->title ?? '' }}</a>
+                                            <a href="{{route('news.single',$newsroom->slug ?? '')}}">{{ Str::limit($newsroom->title,67,'...') ?? '' }}</a>
                                         </h6>
                                     </div>
                                 </div>
