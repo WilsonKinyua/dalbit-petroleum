@@ -40,9 +40,66 @@
                                     aria-labelledby="v-pills-who-we-are-tab">
                                     <div class="row">
                                         <div class="col-lg-12 mb-lg-0 mb-4 text-center">
-                                            <i class="fa fa-exclamation-triangle mb-3"></i>
-                                            <h2 class="mb-3">Coming Soon!</h2>
+                                            <h2>Documents</h2>
                                         </div>
+                                        @if (count($resources) > 0)
+                                            @foreach ($resources as $key => $resource)
+                                                <div class="col-md-4 mb-4">
+                                                    @if (!$resource->details == '')
+                                                        <button class="resource_info_btn" data-toggle="modal"
+                                                            data-target="#resourcesModal{{ $resource->id }}"
+                                                            title="Click to view details"><i
+                                                                class="fa fa-info"></i></button>
+                                                    @endif
+                                                    @if ($resource->file)
+                                                        <a href="{{ $resource->file->getUrl() }}"
+                                                            class="list-group-item list-group-item-action text-center">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <img src="{{ asset('images/pdf.png') }}" alt=""
+                                                                        style="object-fit: contain;" width="100%"
+                                                                        class="">
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        {{ $resource->name ?? '' }}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    @endif
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="resourcesModal{{ $resource->id }}"
+                                                        tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                        aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                                        {{ $resource->name ?? '' }}
+                                                                    </h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    {!! $resource->details ?? '' !!}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        @else
+                                            <div class="col-lg-12 mb-lg-0 mb-4 text-center">
+                                                <i class="fa fa-exclamation-triangle mb-3"></i>
+                                                <h2 class="mb-3">Coming Soon!</h2>
+                                            </div>
+                                        @endif
+
+
+
                                     </div>
                                 </div>
                             </div>
@@ -50,6 +107,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 @endsection

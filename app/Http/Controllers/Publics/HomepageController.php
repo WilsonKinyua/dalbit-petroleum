@@ -9,6 +9,7 @@ use App\Models\Contact;
 use App\Models\ContactInformation;
 use App\Models\Division;
 use App\Models\Newsroom;
+use App\Models\Resource;
 use App\Models\Slider;
 use App\Models\SocialResponsibility;
 use Illuminate\Http\Request;
@@ -132,7 +133,8 @@ class HomepageController extends Controller
     // resources
     public function resources()
     {
-        return view('public.resources');
+        $resources = Resource::with(['media'])->get();
+        return view('public.resources',compact('resources'));
     }
 
     // privacyPolicy

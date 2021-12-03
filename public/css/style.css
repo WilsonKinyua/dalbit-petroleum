@@ -6283,7 +6283,7 @@ a.footer-logo-text:focus {
 
 /* =====================glance ======================*/
 .glance-card {
-    margin-right:24px !important;
+    margin-right: 24px !important;
 }
 @media (max-width: 767px) {
     .glance-card {
@@ -6435,4 +6435,17 @@ a.btn {
 
 .text-underline {
     text-decoration: underline;
+}
+
+.resource_info_btn {
+    position: absolute;
+    background: #05338b;
+    color: #fff;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 99999;
+    top: 0;
+    right: 0;
 }
