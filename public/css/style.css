@@ -2421,6 +2421,9 @@ ol.list li:last-child {
 }
 .team.team-style-1 .team-img img {
     border-radius: 3px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
 }
 .team.team-style-1 .team-info {
     padding: 10px;
@@ -3146,6 +3149,9 @@ ol.list li:last-child {
 }
 .case-study .case-study-item .case-study-img img {
     border-radius: 3px 3px 0 0;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 .case-study .case-study-item .case-study-img a {
     background-color: #ffac20;
@@ -3182,9 +3188,10 @@ ol.list li:last-child {
     opacity: 1;
 }
 .case-study .case-study-item .case-study-info {
-    padding: 78px 30px 30px 30px;
+    padding: 58px 20px 20px 20px;
     margin-top: -50px;
     border-radius: 3px;
+    height: 180px;
 }
 .case-study .case-study-item .case-study-info .case-study-title {
     margin-bottom: 0;
@@ -3199,6 +3206,7 @@ ol.list li:last-child {
 
 .case-study .case-study-item .case-study-info .case-study-title a {
     color: #ffac20 !important;
+    font-size: 15px;
 }
 
 /*****************************
@@ -5219,8 +5227,8 @@ ol.list li:last-child {
 
     .header .navbar-brand img {
         height: 80px;
+        margin-left: 10px;
     }
-
     /* .slider-01 .swiper-slide p button {
     display: block;
     width: 100px !important;
@@ -6274,6 +6282,14 @@ a.footer-logo-text:focus {
 }
 
 /* =====================glance ======================*/
+.glance-card {
+    margin-right:24px !important;
+}
+@media (max-width: 767px) {
+    .glance-card {
+        margin-left: 15px;
+    }
+}
 .glance-header {
     background-color: #041160;
     color: #fff;

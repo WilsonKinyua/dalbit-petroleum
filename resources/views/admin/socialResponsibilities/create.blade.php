@@ -66,8 +66,8 @@
     },
     params: {
       size: 10,
-      width: 4096,
-      height: 4096
+      width: 6096,
+      height: 6096
     },
     success: function (file, response) {
       $('form').find('input[name="image"]').remove()

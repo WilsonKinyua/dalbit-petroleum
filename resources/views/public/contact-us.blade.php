@@ -7,7 +7,7 @@
 @section('content')
 
     <!--=================================
-        Inner Header -->
+                                Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
             style="background-image: url(https://www.dalbitpetroleum.com/img/drcongo/contact.jpg); background-repeat:no-repeat;background-position:center;background-size:cover;">
@@ -34,10 +34,10 @@
         </div>
     </div>
     <!--=================================
-            Inner Header -->
+                                    Inner Header -->
 
     <!--=================================
-            Contact Address -->
+                                    Contact Address -->
     <section class="space-ptb">
         <div class="container">
             <div class="row">
@@ -52,59 +52,25 @@
                         <div class="col-md-12">
                             <h3 class="">Dalbit Affiliates</h3>
                         </div>
-                        <div class="col-md-4 mt-1">
-                            <h6><strong>DALBIT KENYA</strong></h6>
-                            <p>90 James Gichuru Road, Lavington, Nairobi, 1931-0200, Nairobi, Kenya</p>
-                            <!-- <hr class="my-4 my-lg-5">
-                      <p class="mb-0">90 James Gichuru Road, Lavington, Nairobi, 1931-0200, Nairobi, Kenya</p> -->
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">+254 722 205 039, +254 733 333
-                                    193, <br> +254 (0)
-                                    207 602 640</span></div>
-                            <div><strong>FAX:</strong><span class="text-primary ml-1">+254 20 4347439 </span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info.kenya@dalbitpetroleum.com">info.kenya@dalbitpetroleum.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mt-1">
-                            <h6><strong>DALBIT TANZANIA</strong></h6>
-                            <p>Azania Plaza , 2nd Floor Pugu, Nyerere road, 9122, Dar Es Salaam, Tanzania</p>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">+255-22-2863247</span></div>
-                            <div><strong>FAX:</strong><span class="text-primary ml-1">+255-22-2865234</span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info.tanzania@dalbitpetroleum.com">info.tanzania@dalbitpetroleum.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mt-1">
-                            <h6><strong>DALBIT UGANDA</strong></h6>
-                            <p>Dalbit Uganda Limited, Unicario House, 3rd Floor, Archer Road </p>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">P.O Box 24195 Kampala,
-                                    Uganda</span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info.uganda@dalbitpetroleum.com">info.uganda@dalbitpetroleum.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mt-1">
-                            <h6><strong>DALBIT ZAMBIA</strong></h6>
-                            <p>1st Chintu Road Northrise Ndola, Zambia</p>
-                            <div><strong>P.O. Box 72288 Ndola, Zambia</strong></div>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">+260 211610910</span></div>
-                            <div><strong>FAX:</strong><span class="text-primary ml-1">+260 977699125</span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info.zambia@dalbitpetroleum.com">info.zambia@dalbitpetroleum.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mt-1 ">
-                            <h6><strong>DALBIT MOZAMBIQUE</strong></h6>
-                            <p>Ave. Vladimir Lenine, 174, Millennium Park Building <br>City Officer, 13th Floor, Maputo,
-                                Mozambique</p>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info.mozambique@dalbitpetroleum.com">info.mozambique@dalbitpetroleum.com</a></span>
-                            </div>
-                        </div>
+                        @if (count($dalbitAffiliates) > 0)
+                            @foreach ($dalbitAffiliates as $contact)
+                                <div class="col-md-4 mt-1">
+                                    <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
+                                    </h6>
+                                    <p>{!! $contact->location ?? '' !!}</p>
+                                    <div><strong>Telephone:</strong>
+                                        <span class="text-primary ml-1">
+                                            {{ $contact->telephone ?? '' }}
+                                        </span>
+                                    </div>
+                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                        </span></div>
+                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -115,24 +81,25 @@
                         <div class="col-md-12">
                             <h3 class="">Dalbit Trading</h3>
                         </div>
-                        <div class="col-md-4 mt-1">
-                            <h6><strong>DALBIT MAURITIUS</strong></h6>
-                            <p>DALBIT INTERNATIONAL LTD</p>
-                            <div><strong>7th Floor, The Core Building, Ebène, Mauritius</strong></div>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">+230 468 1028/29</span></div>
-                            <div><strong>FAX:</strong><span class="text-primary ml-1">+230 468 1035</span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info@dalbitinternational.com">info@dalbitinternational.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mt-1 ">
-                            <h6><strong>DALBIT DUBAI</strong></h6>
-                            <p>DALBIT TRADING DMCC <br>Office 3702, Swiss Tower - Cluster Y, Jumeirah Lakes Tower, Dubai</p>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info@dalbitinternational.com">info@dalbitinternational.com</a></span>
-                            </div>
-                        </div>
+                        @if (count($dalbitTrading) > 0)
+                            @foreach ($dalbitTrading as $contact)
+                                <div class="col-md-4 mt-1">
+                                    <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
+                                    </h6>
+                                    <p>{!! $contact->location ?? '' !!}</p>
+                                    <div><strong>Telephone:</strong>
+                                        <span class="text-primary ml-1">
+                                            {{ $contact->telephone ?? '' }}
+                                        </span>
+                                    </div>
+                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                        </span></div>
+                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -143,47 +110,53 @@
                         <div class="col-md-12">
                             <h3 class="">Dalbit Licensees</h3>
                         </div>
-                        <div class="col-md-4">
-                            <h6><strong>CONGO PETROL</strong></h6>
-                            <p>Aeroport international de la Luano Lubumbashi, Katanga</p>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">+243-972612879</span></div>
-                            <div><strong>FAX:</strong><span class="text-primary ml-1">+260 977699125</span></div>
-                            <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                        href="mailto:info@congopetrolsprl.com">info@congopetrolsprl.com</a></span></div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <h6 class="mb-4 text-uppercase"><strong>DILSS Petroleum</strong></h6>
-                            <p>Rumbek Airstrip, South Sudan</p>
-                            <div><strong>Telephone:</strong><span class="text-primary ml-1">(+249) 91087312 / (+256)
-                                    477113607</span></div>
-                        </div>
+                        @if (count($dalbitLicensees) > 0)
+                            @foreach ($dalbitLicensees as $contact)
+                                <div class="col-md-4 mt-1">
+                                    <h6 class="text-uppercase"><strong>Dalbit
+                                            {{ $contact->country->name ?? '' }}</strong>
+                                    </h6>
+                                    <p>{!! $contact->location ?? '' !!}</p>
+                                    <div><strong>Telephone:</strong>
+                                        <span class="text-primary ml-1">
+                                            {{ $contact->telephone ?? '' }}
+                                        </span>
+                                    </div>
+                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                        </span></div>
+                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--=================================
-        Map -->
+                                Map -->
     <section class="space-pb mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form class="form-flat-style">
+                    <form class="form-flat-style" method="POST" action="{{ route('contact.message')}}">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-md-4">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                             </div>
                             <div class="form-group col-md-4">
-                                <input type="email" class="form-control" placeholder="Your Email">
+                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
                             </div>
                             <div class="form-group col-md-4">
-                                <input type="text" class="form-control" placeholder="Your Number">
+                                <input type="text" class="form-control" placeholder="Your Number" name="telephone_number">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <textarea rows="8" class="form-control" id="sector" placeholder="Your Message"></textarea>
+                                <textarea rows="8" class="form-control" id="sector" placeholder="Your Message" name="message" required></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-flat"><i
@@ -195,5 +168,5 @@
         </div>
     </section>
     <!--=================================
-        Map -->
+                                Map -->
 @endsection

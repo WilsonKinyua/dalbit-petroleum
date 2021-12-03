@@ -20,7 +20,7 @@ class ContactInformationController extends Controller
         abort_if(Gate::denies('contact_information_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $contactInformations = ContactInformation::with(['division', 'country'])->get();
-
+        
         return view('admin.contactInformations.index', compact('contactInformations'));
     }
 

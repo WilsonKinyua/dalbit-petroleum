@@ -7,7 +7,7 @@
 @section('content')
 
     <!--=================================
-                                    Inner Header -->
+                                        Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
             style="background-image: url(https://res.cloudinary.com/developerwilson/image/upload/v1634117946/dalbit/MicrosoftTeams-image_6_2_ucfywv.jpg);">
@@ -43,10 +43,10 @@
         </div>
     </div>
     <!--=================================
-                                      Inner Header -->
+                                          Inner Header -->
 
     <!--=================================
-                                      About us  -->
+                                          About us  -->
     <section class="space-ptb">
         <div class="container">
             <div class="row d-flex align-content-center flex-wrap">
@@ -83,10 +83,10 @@
         </div>
     </section>
     <!--=================================
-                                      About us  -->
+                                          About us  -->
 
     <!--=================================
-                                      operations -->
+                                          operations -->
     <section class="space-ptb">
         <div class="container">
             <div class="row justify-content-center">
@@ -190,39 +190,40 @@
                         </div>
                     </div>
                 @endif
-                <div class="col-lg-4"></div>
-                <div class="col-lg-6">
-                    <a data-toggle="modal" data-target="#contactModal" class="btn btn-primary  mx-0 mx-md-3">
-                        <i class="btn-icon change-on-hover"> Contacts <i class="fas fa-long-arrow-alt-right"></i></i>
-                        <span>Contacts</span>
-                    </a>
-                </div>
-                <!-- contactModal -->
-                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="mr-3 mt-3">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h6 class="mb-3">Headquarters</h6>
-                                <p class="mb-1">90 James Gichuru Road, Lavington, Nairobi,1931-0200, Nairobi,
-                                    Kenya</p>
-                                <div><strong>Telephone:</strong><span class="text-primary ml-1">+254 722 205 039, +254 733
-                                        333 193, +254
-                                        (0) 207 602 640</span>
+                @if (!$division->contacts == '')
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-6">
+                        <a data-toggle="modal" data-target="#contactModal" class="btn btn-primary  mx-0 mx-md-3">
+                            <i class="btn-icon change-on-hover"> Contacts <i class="fas fa-long-arrow-alt-right"></i></i>
+                            <span>Contacts</span>
+                        </a>
+                    </div>
+                    <!-- contactModal -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="mr-3 mt-3">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                                <div><strong>Fax:</strong><span class="text-primary ml-1">+254 20 4347439</span></div>
-                                <div><strong>E-mail:</strong><span
-                                        class="text-primary ml-1">info.kenya@dalbitpetroleum.com</span>
+                                <div class="modal-body">
+                                    <h6 class="mb-3">Headquarters</h6>
+                                    <p class="mb-1">{{ $division->contacts->location }}</p>
+                                    <div><strong>Telephone:</strong><span
+                                            class="text-primary ml-1">{{ $division->contacts->telephone }}</span>
+                                    </div>
+                                    <div><strong>Fax:</strong><span
+                                            class="text-primary ml-1">{{ $division->contacts->fax }}</span></div>
+                                    <div><strong>E-mail:</strong><span
+                                            class="text-primary ml-1">{{ $division->contacts->email }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endif
             </div>
         </div>
         </div>

@@ -36,18 +36,23 @@
 
                 @if (count($newsrooms) > 0)
                     @foreach ($newsrooms as $key => $newsroom)
-                        <div class="col-lg-4 col-sm-6 pb-2 mb-4">
+                        <div class="col-lg-3 col-sm-6 pb-2 mb-4">
                             <div class="case-study-item">
                                 <div class="case-study-img">
                                     @if ($newsroom->image)
                                         <img class="img-fluid" src="{{ $newsroom->image->getUrl() }}" alt="">
                                     @endif
-                                    <a href="{{route('news.single',$newsroom->slug ?? '')}}"><i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="{{ route('news.single', $newsroom->slug ?? '') }}"><i
+                                            class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                                 <div class="case-study-info">
-                                    <a class="case-study-category" href="{{route('news.single',$newsroom->slug ?? '')}}">{{ $newsroom->location ?? '' }}</a>
+                                    @if (!$newsroom->location == '')
+                                        <a class="case-study-category"
+                                            href="{{ route('news.single', $newsroom->slug ?? '') }}">{{ $newsroom->location ?? '' }}</a>
+                                    @endif
                                     <h6 class="case-study-title"><a
-                                            href="{{route('news.single',$newsroom->slug ?? '')}}">{{ Str::limit($newsroom->title,67,'...') ?? '' }}</a></h6>
+                                            href="{{ route('news.single', $newsroom->slug ?? '') }}">{{ Str::limit($newsroom->title, 67, '...') ?? '' }}</a>
+                                    </h6>
                                 </div>
                             </div>
                         </div>

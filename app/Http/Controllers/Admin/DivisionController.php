@@ -44,7 +44,7 @@ class DivisionController extends Controller
 
         $countries = Country::pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $contacts = ContactInformation::pluck('email', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $contacts = ContactInformation::pluck('location', 'id')->prepend(trans('global.pleaseSelect'), '');
 
         return view('admin.divisions.create', compact('division_types', 'countries', 'contacts'));
     }
@@ -92,7 +92,7 @@ class DivisionController extends Controller
 
         $countries = Country::pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $contacts = ContactInformation::pluck('email', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $contacts = ContactInformation::pluck('location', 'id')->prepend(trans('global.pleaseSelect'), '');
 
         $division->load('division_type', 'country', 'contacts');
 

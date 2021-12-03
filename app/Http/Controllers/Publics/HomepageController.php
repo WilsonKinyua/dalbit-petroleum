@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Publics;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreContactRequest;
 use App\Models\Category;
+use App\Models\Contact;
+use App\Models\ContactInformation;
 use App\Models\Division;
 use App\Models\Newsroom;
 use App\Models\Slider;
@@ -107,7 +110,17 @@ class HomepageController extends Controller
     // contact us
     public function contactUs()
     {
-        return view('public.contact-us');
+        $dalbitAffiliates = ContactInformation::where('division_id', 1)->with(['division', 'country'])->get();
+        $dalbitTrading = ContactInformation::where('division_id', 2)->with(['division', 'country'])->get();
+        $dalbitLicensees = ContactInformation::where('division_id', 3)->with(['division', 'country'])->get();
+        return view('public.contact-us', compact('dalbitAffiliates', 'dalbitTrading', 'dalbitLicensees'));
+    }
+
+    // addContactUsMessage
+    public function addContactUsMessage(StoreContactRequest $request)
+    {
+        $contact_messages = Contact::create($request->all());
+        return redirect()->back()->with('success', 'Message Sent Successfully');
     }
 
     // ourPolicies

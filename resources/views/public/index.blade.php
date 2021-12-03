@@ -65,7 +65,7 @@
                 @if ($divisions)
                     @foreach ($divisions as $key => $division)
                         <div class="item">
-                            <div class="team team-style-1 ">
+                            <div class="team team-style-1">
                                 <div class="team-img">
                                     @if ($division->country_image)
                                         <img class="img-fluid" src="{{ $division->country_image->getUrl() }}" alt="">
@@ -80,14 +80,26 @@
                         </div>
                     @endforeach
                 @endif
+                {{-- <div class="item">
+                    <div class="team team-style-1">
+                      <div class="team-img">
+                        <img class="img-fluid"
+                          src="https://www.silverbackgorillatours.com/wp-content/uploads/2019/04/Kampala-City-in-Uganda.jpg"
+                          alt="">
+                      </div>
+                      <div class="team-info">
+                        <h6 class="team-title"><a href="./uganda.html">Uganda</a></h6>
+                      </div>
+                    </div>
+                  </div> --}}
             </div>
         </div>
     </section>
 
     <!-- ============================== glance box =========================== -->
 
-    <section class="glance" id="glance">
-        <div class="glance-card container mt-5">
+    <section class="container space-ptb team-grid">
+        <div class="glance-card mt-5">
             <div class="bg-light">
                 <div class="glance-header text-center p-1">
                     <h6 class="text-uppercase text-white tl-1">Dalbit AT A GLANCE</h6>
@@ -115,8 +127,8 @@
             </div>
         </div>
     </section>
-    <section class="space-ptb mt-4">
-        <div class="container">
+    <section class="container space-ptb mt-4">
+        <div class="">
             <div class="row justify-content-center">
                 <div class="col-md-7">
                     <div class="section-title text-center">

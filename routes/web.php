@@ -19,6 +19,7 @@ Route::get('our-policies', 'Publics\HomepageController@ourPolicies')->name('our.
 Route::get('resources', 'Publics\HomepageController@resources')->name('resources');
 Route::get('privacy-policy', 'Publics\HomepageController@privacyPolicy')->name('privacy.policy');
 Route::get('cookies', 'Publics\HomepageController@cookies')->name('cookies');
+Route::post('contact-message', 'Publics\HomepageController@addContactUsMessage')->name('contact.message');
 
 
 // Route::redirect('/', '/login');
