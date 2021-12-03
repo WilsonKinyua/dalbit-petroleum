@@ -2,9 +2,9 @@
     footer-->
  <footer class="footer space-ptb bg-dark">
      <div class="container">
-         <div class="row ml-5 pl-5">
-             <div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-                 <h6 class="text-white mb-2 mb-sm-4">More about Dalbit</h6>
+         <div class="row">
+             <div class="col-sm-6 col-lg-3  mb-sm-0">
+                 <h6 class="text-white  mb-sm-4">More about Dalbit</h6>
                  <div class="footer-link">
                      <ul class="list-unstyled mb-0">
                          <li><a href="{{ route('about.us') }}">About Us</a></li>
@@ -15,7 +15,7 @@
                  </div>
              </div>
              <div class="col-sm-6 col-lg-3">
-                 <h6 class="text-white mb-2 mb-sm-4">Support</h6>
+                 <h6 class="text-white  mb-sm-4">Support</h6>
                  <div class="footer-link">
                      <ul class="list-unstyled mb-0">
                          <li><a href="{{ route('our.policies') }}">Our policies</a></li>
@@ -25,7 +25,7 @@
                  </div>
              </div>
              <div class="col-sm-6 col-lg-3">
-                 <h6 class="text-white mb-2 mb-sm-4">Terms of use</h6>
+                 <h6 class="text-white  mb-sm-4">Terms of use</h6>
                  <div class="footer-link">
                      <ul class="list-unstyled mb-0">
                          <li><a href="{{ route('privacy.policy') }}">Privacy Policy</a></li>
@@ -33,8 +33,8 @@
                      </ul>
                  </div>
              </div>
-             <div class="col-md-12 col-lg-3 mb-4 mb-lg-0 mb-md-5 social-media-icons-footer">
-                 <h6 class="text-white mb-2 mb-sm-4">Connect with us</h6>
+             <div class="col-md-12 col-lg-3  mb-lg-0 mb-md-5 social-media-icons-footer">
+                 <h6 class="text-white  mb-sm-4">Connect with us</h6>
                  <ul class="list-unstyled social-icon">
                      <li><a target="_blank" href="https://www.facebook.com/dalbitpetroleum"><i
                                  class="fab fa-facebook-f"></i></a></li>
@@ -46,7 +46,7 @@
              </div>
          </div>
          <div class="row">
-             <div class="col-sm-12 mt-4 mt-sm-5 text-center">
+             <div class="col-sm-12 text-center">
                  <p class="mb-0 text-white mt-4">
                      ©Copyright
                      <script>
