@@ -31,6 +31,26 @@
                 <span class="help-block">{{ trans('cruds.newsroom.fields.location_helper') }}</span>
             </div>
             <div class="form-group">
+                <label for="location">Sentence on the article</label>
+                <input class="form-control {{ $errors->has('article_sentence') ? 'is-invalid' : '' }}" type="text"
+                    name="article_sentence" id="article_sentence" value="{{ old('article_sentence', $newsroom->article_sentence) }}">
+                @if ($errors->has('article_sentence'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('article_sentence') }}
+                    </div>
+                @endif
+            </div>
+            <div class="form-group">
+                <label for="location">SEO Keywords</label>
+                <textarea class="form-control {{ $errors->has('seo_keywords') ? 'is-invalid' : '' }}"
+                    name="seo_keywords" id="seo_keywords">{!! old('seo_keywords',$newsroom->seo_keywords) !!}</textarea>
+                @if ($errors->has('seo_keywords'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('seo_keywords') }}
+                    </div>
+                @endif
+            </div>
+            <div class="form-group">
                 <label class="required" for="image">{{ trans('cruds.newsroom.fields.image') }}</label>
                 <div class="needsclick dropzone {{ $errors->has('image') ? 'is-invalid' : '' }}" id="image-dropzone">
                 </div>
@@ -40,6 +60,16 @@
                     </div>
                 @endif
                 <span class="help-block">{{ trans('cruds.newsroom.fields.image_helper') }}</span>
+            </div>
+            <div class="form-group">
+                <label for="photo_caption">Photo Caption</label>
+                <input class="form-control {{ $errors->has('photo_caption') ? 'is-invalid' : '' }}" type="text"
+                    name="photo_caption" id="photo_caption" value="{{ old('photo_caption', $newsroom->photo_caption) }}">
+                @if ($errors->has('photo_caption'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('photo_caption') }}
+                    </div>
+                @endif
             </div>
             <div class="form-group">
                 <label for="description">{{ trans('cruds.newsroom.fields.description') }}</label>

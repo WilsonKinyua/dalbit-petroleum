@@ -80,7 +80,7 @@
                             </td>
                             <td>
                                 @can('newsroom_show')
-                                    <a class="btn btn-xs btn-primary" href="{{ route('admin.newsrooms.show', $newsroom->id) }}">
+                                    <a class="btn btn-xs btn-primary" href="{{ route('news.single', $newsroom->slug ?? '') }}">
                                         {{ trans('global.view') }}
                                     </a>
                                 @endcan
@@ -157,7 +157,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 let visibleColumnsIndexes = null;
 $('.datatable thead').on('input', '.search', function () {
       let strict = $(this).attr('strict') || false

@@ -25,6 +25,18 @@ class StoreNewsroomRequest extends FormRequest
                 'string',
                 'nullable',
             ],
+            'article_sentence' => [
+                'string',
+                'nullable',
+            ],
+            'photo_caption' => [
+                'string',
+                'nullable',
+            ],
+            'seo_keywords' => [
+                'string',
+                'nullable',
+            ],
             'image' => [
                 'required',
             ],

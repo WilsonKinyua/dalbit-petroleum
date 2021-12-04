@@ -32,8 +32,6 @@
     <section class="space-ptb case-study">
         <div class="container">
             <div class="row">
-
-
                 @if (count($newsrooms) > 0)
                     @foreach ($newsrooms as $key => $newsroom)
                         <div class="col-lg-3 col-sm-6 pb-2 mb-4">

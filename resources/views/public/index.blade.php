@@ -167,7 +167,7 @@
             <div class="row mt-4 mt-md-5 ">
                 <div class="col-12 d-md-flex justify-content-center align-items-center text-center">
                     <p class="mb-3 mb-md-0 mx-0 mx-md-3 text-light">We have articles on a range of topics</p>
-                    <a href="./news.html" class="btn btn-primary btn-sm">
+                    <a href="{{ route('top.news') }}" class="btn btn-primary btn-sm">
                         <i class="btn-icon change-on-hover"> View More <i class="fas fa-long-arrow-alt-right"></i></i>
                         <span>View More</span>
                     </a>

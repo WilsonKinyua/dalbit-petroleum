@@ -6449,3 +6449,8 @@ a.btn {
     top: 0;
     right: 0;
 }
+.left-side {
+    float: left;
+    width: 40%;
+    padding: 1%;
+}
