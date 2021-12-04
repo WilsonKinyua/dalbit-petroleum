@@ -5,12 +5,9 @@
 @endsection
 
 @section('content')
-
-    <!--=================================
-        Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
-            style="background-image: url(https://images.unsplash.com/photo-1624905181039-15decb58128b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80);">
+            style="background-image: url({{ asset('images/policies.jpeg') }});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -32,12 +29,6 @@
             </div>
         </div>
     </div>
-    <!--=================================
-          Inner Header -->
-
-
-    <!--=================================
-          Feature Info -->
     <section class="space-ptb bg-light">
         <div class="container">
             <div class="row">
@@ -61,7 +52,7 @@
                             </p>
                             <br>
                             <a class="btn btn-link text-dark" target="_blank"
-                                href="https://www.dalbitpetroleum.com/img/Dalbit-Petroleum-Health-Safety-Security-and-the-Environment-HSSE-Policy.pdf">Learn
+                                href="{{ asset('documents/Dalbit-Petroleum-Health-Safety-Security-and-the-Environment-HSSE-Policy.pdf') }}">Learn
                                 more<i class="fas fa-long-arrow-alt-right ml-1"></i></a>
                         </div>
                     </div>
@@ -112,7 +103,7 @@
                             </ul>
                             <br>
                             <a class="btn btn-link text-dark" target="_blank"
-                                href="https://www.dalbitpetroleum.com/img/Dalbit-Petroleum-Anti-bribery-Policy.pdf">Learn
+                                href="{{ asset('documents/Dalbit-Petroleum-Anti-bribery-Policy.pdf') }}">Learn
                                 more<i class="fas fa-long-arrow-alt-right ml-1"></i></a>
                         </div>
                     </div>
@@ -120,7 +111,4 @@
             </div>
         </div>
     </section>
-    <!--=================================
-          Feature Info -->
-
 @endsection

@@ -4,13 +4,15 @@
     - Contact Us
 @endsection
 
-@section('content')
+@section('css')
+    {{-- toastr --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/toastr.min.css') }}">
+@endsection
 
-    <!--=================================
-                                Inner Header -->
+@section('content')
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
-            style="background-image: url(https://www.dalbitpetroleum.com/img/drcongo/contact.jpg); background-repeat:no-repeat;background-position:center;background-size:cover;">
+            style="background-image: url({{ asset('images/contact.jpg') }}); background-repeat:no-repeat;background-position:center;background-size:cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -33,11 +35,6 @@
             </div>
         </div>
     </div>
-    <!--=================================
-                                    Inner Header -->
-
-    <!--=================================
-                                    Contact Address -->
     <section class="space-ptb">
         <div class="container">
             <div class="row">
@@ -135,13 +132,11 @@
             </div>
         </div>
     </section>
-    <!--=================================
-                                Map -->
     <section class="space-pb mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form class="form-flat-style" method="POST" action="{{ route('contact.message')}}">
+                    <form class="form-flat-style" method="POST" action="{{ route('contact.message') }}">
                         @csrf
                         <div class="row">
                             <div class="form-group col-md-4">
@@ -156,7 +151,8 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <textarea rows="8" class="form-control" id="sector" placeholder="Your Message" name="message" required></textarea>
+                                <textarea rows="8" class="form-control" id="sector" placeholder="Your Message"
+                                    name="message" required></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-flat"><i
@@ -167,6 +163,46 @@
             </div>
         </div>
     </section>
-    <!--=================================
-                                Map -->
+@endsection
+@section('scripts')
+    {{-- notification --}}
+    <script src="{{ asset('js/toastr.min.js') }}"></script>
+    <script>
+        @if (Session::has('success'))
+            toastr.options =
+            {
+            "closeButton" : true,
+            "progressBar" : true
+            }
+            // toastr.options.positionClass = 'toast-bottom-right';
+            toastr.success("{{ session('success') }}");
+        @endif
+
+        @if (Session::has('error'))
+            toastr.options =
+            {
+            "closeButton" : true,
+            "progressBar" : true
+            }
+            toastr.error("{{ session('error') }}");
+        @endif
+
+        @if (Session::has('info'))
+            toastr.options =
+            {
+            "closeButton" : true,
+            "progressBar" : true
+            }
+            toastr.info("{{ session('info') }}");
+        @endif
+
+        @if (Session::has('warning'))
+            toastr.options =
+            {
+            "closeButton" : true,
+            "progressBar" : true
+            }
+            toastr.warning("{{ session('warning') }}");
+        @endif
+    </script>
 @endsection

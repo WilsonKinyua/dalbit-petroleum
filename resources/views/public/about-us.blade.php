@@ -13,12 +13,9 @@
         }
 
     </style>
-
-    <!--=================================
-            Inner Header -->
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
-            style="background-image: url(https://res.cloudinary.com/developerwilson/image/upload/v1634117946/dalbit/MicrosoftTeams-image_6_2_ucfywv.jpg);">
+            style="background-image: url({{ asset('images/1.jpg') }});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -40,11 +37,6 @@
             </div>
         </div>
     </div>
-    <!--=================================
-          Inner Header -->
-    <!--=================================
-          About us  -->
-
     <section class="space-ptb">
         <div class="container">
             <div class="row d-flex align-content-center flex-wrap">
@@ -65,11 +57,6 @@
                                                 petroleum products and services across East, Central and Southern
                                                 Africa.
                                             </p>
-                                            {{-- <a href="#" class="btn btn-primary  mx-0 mx-md-3">
-                                                <i class="btn-icon change-on-hover"> Read More <i
-                                                        class="fas fa-long-arrow-alt-right"></i></i>
-                                                <span>Read More</span>
-                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -78,102 +65,93 @@
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center mb-md-0 mb-4">
-                    <img class="img-fluid rounded" src="./images//about/9.png" alt="">
-                </div>
-            </div>
-            <div class="row d-flex align-content-center flex-wrap mt-5 mb-3">
-                <div class="col-md-6 align-self-center mb-md-0 mb-4">
-                    <img class="img-fluid rounded" src="./images//about/8.png" alt="">
-                </div>
-                <div class="col-md-6 align-self-center pl-3 pl-lg-5">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-8 col-xl-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
-                                    aria-labelledby="v-pills-who-we-are-tab">
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h6 class="mb-3">Our Mission</h6>
-                                            <p>
-                                                To be the leading petroleum supply company across East, Central and Southern
-                                                Africa, fuelling
-                                                regional growth through reliable distribution networks.
-                                            </p>
+                    <img class="img-fluid rounded" src="{{ asset('images/about/9.png') }}" alt=""">
+                        </div>
+                    </div>
+                    <div class="  row d-flex align-content-center flex-wrap mt-5 mb-3">
+                    <div class="col-md-6 align-self-center mb-md-0 mb-4">
+                        <img class="img-fluid rounded" src="{{ asset('images/about/8.png') }}" alt="">
+                    </div>
+                    <div class="col-md-6 align-self-center pl-3 pl-lg-5">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-8 col-xl-9">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
+                                        aria-labelledby="v-pills-who-we-are-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                                <h6 class="mb-3">Our Mission</h6>
+                                                <p>
+                                                    To be the leading petroleum supply company across East, Central and
+                                                    Southern
+                                                    Africa, fuelling
+                                                    regional growth through reliable distribution networks.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-            <div class="row d-flex align-content-center flex-wrap mt-5">
-                <div class="col-md-6 align-self-center pl-3 pl-lg-5">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-8 col-xl-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
-                                    aria-labelledby="v-pills-who-we-are-tab">
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h6 class="mb-3">Vision</h6>
-                                            <p>
-                                                To be the preferred Petroleum company in East, Central and Southern Africa
-                                                offering a total
-                                                energy solution.
-                                            </p>
+                </div>
+                <div class="row d-flex align-content-center flex-wrap mt-5">
+                    <div class="col-md-6 align-self-center pl-3 pl-lg-5">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-8 col-xl-9">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
+                                        aria-labelledby="v-pills-who-we-are-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                                <h6 class="mb-3">Vision</h6>
+                                                <p>
+                                                    To be the preferred Petroleum company in East, Central and Southern
+                                                    Africa
+                                                    offering a total
+                                                    energy solution.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 align-self-center mb-md-0 mb-4">
+                        <img class="img-fluid rounded" src="{{ asset('images/2.jpeg') }}" alt="">
+                    </div>
                 </div>
-                <div class="col-md-6 align-self-center mb-md-0 mb-4">
-                    <img class="img-fluid rounded"
-                        src="https://www.ft.com/__origami/service/image/v2/images/raw/https%253A%252F%252Fs3-ap-northeast-1.amazonaws.com%252Fpsh-ex-ftnikkei-3937bb4%252Fimages%252F3%252F6%252F2%252F3%252F30293263-3-eng-GB%252FCropped-1603990366RTX6GFGI.JPG?width=1024&height=512&fit=cover&gravity=faces&source=nar-cms"
-                        alt="">
-                </div>
-            </div>
-            <div class="row d-flex align-content-center flex-wrap mt-5 mb-3">
-                <div class="col-md-6 align-self-center mb-md-0 mb-4">
-                    <img class="img-fluid rounded" src="https://www.dalbitpetroleum.com/img/kenya/csr_5.jpg" alt="">
-                </div>
-                <div class="col-md-6 align-self-center pl-3 pl-lg-5">
-                    <div class="row">
-                        <div class="col-md-7 col-lg-8 col-xl-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
-                                    aria-labelledby="v-pills-who-we-are-tab">
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h6 class="mb-3">Our Values</h6>
-                                            <p>We take no shortcuts on ethics, compliance, and quality. We strive to be
-                                                fair and caring towards our employees, customers and community.
-                                            </p>
-                                            {{-- <a href="#" class="btn btn-primary  mx-0 mx-md-3">
-                                                <i class="btn-icon change-on-hover"> Read More <i
-                                                        class="fas fa-long-arrow-alt-right"></i></i>
-                                                <span>Read More</span>
-                                            </a> --}}
+                <div class="row d-flex align-content-center flex-wrap mt-5 mb-3">
+                    <div class="col-md-6 align-self-center mb-md-0 mb-4">
+                        <img class="img-fluid rounded" src="{{ asset('images/csr_5.jpg') }}" alt="">
+                    </div>
+                    <div class="col-md-6 align-self-center pl-3 pl-lg-5">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-8 col-xl-9">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
+                                        aria-labelledby="v-pills-who-we-are-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12 mb-lg-0 mb-4">
+                                                <h6 class="mb-3">Our Values</h6>
+                                                <p>We take no shortcuts on ethics, compliance, and quality. We strive to be
+                                                    fair and caring towards our employees, customers and community.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
     </section>
-
-    <!--=================================
-          Site Content -->
     <section id="partners" class="space-ptb text-center bg-holder bg-overlay-black-80 bg-dark"
-        data-jarallax='{"speed": 0.5}'
-        style="background-image: url(https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80);">
+        data-jarallax='{"speed": 0.5}' style="background-image: url({{ asset('images/greetings.jpeg') }});">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-10">
@@ -189,7 +167,4 @@
             </div>
         </div>
     </section>
-    <!--=================================
-          Site Content -->
-
 @endsection

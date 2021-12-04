@@ -7,7 +7,7 @@
 @section('content')
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
-            style="background-image: url(https://balaoanwaterdistrict.gov.ph/images/career.jpg); background-position:center;background-repeat: no-repeat;background-size: cover;">
+            style="background-image: url({{ asset('images/career.jpg') }}); background-position:center;background-repeat: no-repeat;background-size: cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

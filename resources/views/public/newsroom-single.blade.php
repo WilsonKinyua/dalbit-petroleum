@@ -13,7 +13,7 @@
             background-repeat: no-repeat;"
         @else
             style="background-image:
-            url(https://www.dalbitpetroleum.com/news/Dalbit-BSL-Storage-Deal-Tazama-Pipelines.jpg); background-size: cover;
+            url({{ asset('images/Dalbit-BSL-Storage-Deal-Tazama-Pipelines.jpg')}}); background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;"
             @endif

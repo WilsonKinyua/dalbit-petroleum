@@ -80,18 +80,6 @@
                         </div>
                     @endforeach
                 @endif
-                {{-- <div class="item">
-                    <div class="team team-style-1">
-                      <div class="team-img">
-                        <img class="img-fluid"
-                          src="https://www.silverbackgorillatours.com/wp-content/uploads/2019/04/Kampala-City-in-Uganda.jpg"
-                          alt="">
-                      </div>
-                      <div class="team-info">
-                        <h6 class="team-title"><a href="./uganda.html">Uganda</a></h6>
-                      </div>
-                    </div>
-                  </div> --}}
             </div>
         </div>
     </section>

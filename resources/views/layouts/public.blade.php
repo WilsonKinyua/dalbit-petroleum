@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    {{-- * Created by Wilson Kinyua.
+
+        {{-- * Created by Wilson Kinyua.
         * Email: wilsonkinyuam@gmail.com
         * User: wilson
         * Date: 02/12/2021
         * Time: 10:39 AM --}}
+
     <meta charset="utf-8">
     <meta name="keywords" content="" />
     <meta name="description" content="Dalbit Petroleum " />
@@ -28,9 +30,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     @yield('css')
-    {{-- toastr --}}
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -63,59 +62,14 @@
 
     <!-- Page JS Implementing Plugins-->
     <script src="{{ asset('js/jquery.appear.js') }}"></script>
-    <script src="{{ asset('js/counter/jquery.countTo.js') }}"></script>
     <script src="{{ asset('js/owl-carousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('js/swiper/swiper.min.js') }}"></script>
     <script src="{{ asset('js/swiperanimation/SwiperAnimation.min.js') }}"></script>
     <script src="{{ asset('js/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/shuffle/shuffle.min.js') }}"></script>
-    <script src="{{ asset('js/easy-pie-chart/easy-pie-chart.js') }}"></script>
-    <script src="{{ asset('js/apexcharts/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('js/apexcharts/charts.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    {{-- notification --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script>
-        @if (Session::has('success'))
-            toastr.options =
-            {
-            "closeButton" : true,
-            "progressBar" : true
-            }
-            // toastr.options.positionClass = 'toast-bottom-right';
-            toastr.success("{{ session('success') }}");
-        @endif
-
-        @if (Session::has('error'))
-            toastr.options =
-            {
-            "closeButton" : true,
-            "progressBar" : true
-            }
-            toastr.error("{{ session('error') }}");
-        @endif
-
-        @if (Session::has('info'))
-            toastr.options =
-            {
-            "closeButton" : true,
-            "progressBar" : true
-            }
-            toastr.info("{{ session('info') }}");
-        @endif
-
-        @if (Session::has('warning'))
-            toastr.options =
-            {
-            "closeButton" : true,
-            "progressBar" : true
-            }
-            toastr.warning("{{ session('warning') }}");
-        @endif
-    </script>
-
     <!--  Scripts -->
     <script src="{{ asset('js/custom.js') }}"></script>
+    @yield('scripts')
 </body>
 
 

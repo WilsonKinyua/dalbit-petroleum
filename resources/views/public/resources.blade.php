@@ -7,7 +7,7 @@
 @section('content')
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
-            style="background-image: url(https://res.cloudinary.com/developerwilson/image/upload/v1634117946/dalbit/MicrosoftTeams-image_6_2_ucfywv.jpg);">
+            style="background-image: url({{ asset('images/1.jpg') }});">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
