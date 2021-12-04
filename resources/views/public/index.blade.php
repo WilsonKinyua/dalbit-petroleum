@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mr-3">
                 @if (count($newsrooms) > 0)
                     @foreach ($newsrooms as $key => $newsroom)
                         <div class="col-md-3 col-sm-6">

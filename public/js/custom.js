@@ -202,7 +202,7 @@
   };
 
 
-	
+
 
   /*************************
       Magnific Popup
@@ -545,7 +545,7 @@ var supportsCssVars = function () {
     e
   );
 };
-supportsCssVars() ||
-  alert(
-    "Please view this demo in a modern browser that supports CSS Variables."
-  );
+// supportsCssVars() ||
+//   alert(
+//     "Please view this demo in a modern browser that supports CSS Variables."
+//   );

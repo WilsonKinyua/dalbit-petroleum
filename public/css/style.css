@@ -6,9 +6,6 @@
 @import url("swiper/swiper.min.css");
 @import url("animate/animate.min.css");
 @import url("magnific-popup/magnific-popup.css");
-/*****************************
-  Typography
-*****************************/
 body {
     font-family: "Archivo", sans-serif;
     font-weight: 400;
@@ -6316,7 +6313,7 @@ a.footer-logo-text:focus {
 /* about us  */
 .about-us {
     margin-top: 40px;
-    background-image: url("https://www.dalbitpetroleum.com/img/kenya/about.jpg");
+    background-image: url("../images/about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
