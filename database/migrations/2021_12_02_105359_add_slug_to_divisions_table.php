@@ -14,7 +14,7 @@ class AddSlugToDivisionsTable extends Migration
     public function up()
     {
         Schema::table('divisions', function (Blueprint $table) {
-            $table->string('slug')->nullable();
+            $table->longText('slug')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddSlugToDivisionsTable extends Migration
     public function down()
     {
         Schema::table('divisions', function (Blueprint $table) {
-            $table->string('slug')->nullable();
+            $table->longText('slug')->nullable();
         });
     }
 }

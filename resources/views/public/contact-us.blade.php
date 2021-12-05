@@ -46,25 +46,33 @@
                 </div>
                 <div class="col-md-12">
                     <div class="row mb-4">
-                        <div class="col-md-12">
-                            <h3 class="">Dalbit Affiliates</h3>
-                        </div>
                         @if (count($dalbitAffiliates) > 0)
+                            <div class="col-md-12">
+                                <h3 class="">Dalbit Affiliates</h3>
+                            </div>
                             @foreach ($dalbitAffiliates as $contact)
                                 <div class="col-md-4 mt-1">
                                     <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
                                     <p>{!! $contact->location ?? '' !!}</p>
-                                    <div><strong>Telephone:</strong>
-                                        <span class="text-primary ml-1">
-                                            {{ $contact->telephone ?? '' }}
-                                        </span>
-                                    </div>
-                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
-                                        </span></div>
-                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
-                                    </div>
+                                    @if (!$contact->telephone == '')
+                                        <div><strong>Telephone:</strong>
+                                            <span class="text-primary ml-1">
+                                                {{ $contact->telephone ?? '' }}
+                                            </span>
+                                        </div>
+                                    @endif
+                                    @if (!$contact->fax == '')
+                                        <div><strong>FAX:</strong><span
+                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                            </span></div>
+                                    @endif
+                                    @if (!$contact->email == '')
+                                        <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                    href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                        </div>
+                                    @endif
+
                                 </div>
                             @endforeach
                         @endif
@@ -75,25 +83,33 @@
                 </div>
                 <div class="col-md-12">
                     <div class="row mb-4">
-                        <div class="col-md-12">
-                            <h3 class="">Dalbit Trading</h3>
-                        </div>
                         @if (count($dalbitTrading) > 0)
+                            <div class="col-md-12">
+                                <h3 class="">Dalbit Trading</h3>
+                            </div>
                             @foreach ($dalbitTrading as $contact)
                                 <div class="col-md-4 mt-1">
                                     <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
                                     <p>{!! $contact->location ?? '' !!}</p>
-                                    <div><strong>Telephone:</strong>
-                                        <span class="text-primary ml-1">
-                                            {{ $contact->telephone ?? '' }}
-                                        </span>
-                                    </div>
-                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
-                                        </span></div>
-                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
-                                    </div>
+                                    @if (!$contact->telephone == '')
+                                        <div><strong>Telephone:</strong>
+                                            <span class="text-primary ml-1">
+                                                {{ $contact->telephone ?? '' }}
+                                            </span>
+                                        </div>
+                                    @endif
+                                    @if (!$contact->fax == '')
+                                        <div><strong>FAX:</strong><span
+                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                            </span></div>
+                                    @endif
+                                    @if (!$contact->email == '')
+                                        <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                    href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                        </div>
+                                    @endif
+
                                 </div>
                             @endforeach
                         @endif
@@ -104,26 +120,34 @@
                 </div>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="">Dalbit Licensees</h3>
-                        </div>
                         @if (count($dalbitLicensees) > 0)
+                            <div class="col-md-12">
+                                <h3 class="">Dalbit Licensees</h3>
+                            </div>
                             @foreach ($dalbitLicensees as $contact)
                                 <div class="col-md-4 mt-1">
                                     <h6 class="text-uppercase"><strong>Dalbit
                                             {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
                                     <p>{!! $contact->location ?? '' !!}</p>
-                                    <div><strong>Telephone:</strong>
-                                        <span class="text-primary ml-1">
-                                            {{ $contact->telephone ?? '' }}
-                                        </span>
-                                    </div>
-                                    <div><strong>FAX:</strong><span class="text-primary ml-1">{{ $contact->fax ?? '' }}
-                                        </span></div>
-                                    <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
-                                                href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
-                                    </div>
+                                    @if (!$contact->telephone == '')
+                                        <div><strong>Telephone:</strong>
+                                            <span class="text-primary ml-1">
+                                                {{ $contact->telephone ?? '' }}
+                                            </span>
+                                        </div>
+                                    @endif
+                                    @if (!$contact->fax == '')
+                                        <div><strong>FAX:</strong><span
+                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                            </span></div>
+                                    @endif
+                                    @if (!$contact->email == '')
+                                        <div><strong>E-mail:</strong><span class="text-primary ml-1"><a
+                                                    href="mailto:{{ $contact->email ?? '' }}">{{ $contact->email ?? '' }}</a></span>
+                                        </div>
+                                    @endif
+
                                 </div>
                             @endforeach
                         @endif

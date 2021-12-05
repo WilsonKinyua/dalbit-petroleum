@@ -73,7 +73,14 @@
                                 </div>
                                 <div class="team-info bg-color-main ">
                                     <h6 class="team-title">
-                                        <a href="{{ route('division.country',$division->slug )}}">{{ $division->country->name ?? '' }}</a>
+                                        @if ($division->slug == 'democratic-republic-of-the-congo')
+                                            <a href="{{ route('division.country', $division->slug) }}">DRC (Licensee)</a>
+                                        @elseif ($division->slug == 'south-sudan')
+                                            <a href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }} (Licensee)</a>
+                                        @else
+                                            <a
+                                                href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }}</a>
+                                        @endif
                                     </h6>
                                 </div>
                             </div>
@@ -138,7 +145,8 @@
                                 <div class="blog-post-content">
                                     <div class="blog-post-details">
                                         <h6 class="blog-post-title mb-0 text-primary">
-                                            <a href="{{route('news.single',$newsroom->slug ?? '')}}">{{ Str::limit($newsroom->title,67,'...') ?? '' }}</a>
+                                            <a
+                                                href="{{ route('news.single', $newsroom->slug ?? '') }}">{{ Str::limit($newsroom->title, 67, '...') ?? '' }}</a>
                                         </h6>
                                     </div>
                                 </div>

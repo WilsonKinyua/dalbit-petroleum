@@ -14,7 +14,7 @@ class AddSlugToNewsroomsTable extends Migration
     public function up()
     {
         Schema::table('newsrooms', function (Blueprint $table) {
-            $table->string('slug')->nullable();
+            $table->longText('slug')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddSlugToNewsroomsTable extends Migration
     public function down()
     {
         Schema::table('newsrooms', function (Blueprint $table) {
-            $table->string('slug')->nullable();
+            $table->longText('slug')->nullable();
         });
     }
 }

@@ -10,7 +10,7 @@ class CreateNewsroomsTable extends Migration
     {
         Schema::create('newsrooms', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->longText('title');
             $table->string('location')->nullable();
             $table->longText('description');
             $table->timestamps();

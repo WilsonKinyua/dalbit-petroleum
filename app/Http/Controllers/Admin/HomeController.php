@@ -19,7 +19,7 @@ class HomeController
             'filter_field'          => 'created_at',
             'filter_days'           => '30',
             'group_by_field_format' => 'd/m/Y H:i:s',
-            'column_class'          => 'col-md-6',
+            'column_class'          => 'col-md-12',
             'entries_number'        => '5',
             'fields'                => [
                 'name'             => '',
@@ -58,7 +58,7 @@ class HomeController
                 'name'       => '',
                 'email'      => '',
                 'roles'      => 'title',
-                'created_at' => '',
+                // 'created_at' => '',
             ],
             'translation_key' => 'user',
         ];
@@ -94,7 +94,7 @@ class HomeController
                 'telephone'  => '',
                 'fax'        => '',
                 'email'      => '',
-                'created_at' => '',
+                // 'created_at' => '',
             ],
             'translation_key' => 'contactInformation',
         ];
@@ -152,13 +152,13 @@ class HomeController
             'filter_field'          => 'created_at',
             'filter_days'           => '30',
             'group_by_field_format' => 'd/m/Y H:i:s',
-            'column_class'          => 'col-md-6',
+            'column_class'          => 'col-md-12',
             'entries_number'        => '5',
             'fields'                => [
                 'title'      => '',
-                'location'   => '',
+                // 'location'   => '',
                 // 'image'      => '',
-                'created_at' => '',
+                // 'created_at' => '',
             ],
             'translation_key' => 'newsroom',
         ];

@@ -14,9 +14,9 @@ class AddPhotoCaptionAndSentenceOnTheArticleToNewsrooms extends Migration
     public function up()
     {
         Schema::table('newsrooms', function (Blueprint $table) {
-            $table->string('article_sentence')->nullable();
-            $table->string('photo_caption')->nullable();
-            $table->string('seo_keywords')->nullable();
+            $table->longText('article_sentence')->nullable();
+            $table->longText('photo_caption')->nullable();
+            $table->longText('seo_keywords')->nullable();
         });
     }
 
@@ -28,9 +28,9 @@ class AddPhotoCaptionAndSentenceOnTheArticleToNewsrooms extends Migration
     public function down()
     {
         Schema::table('newsrooms', function (Blueprint $table) {
-            $table->string('article_sentence')->nullable();
-            $table->string('photo_caption')->nullable();
-            $table->string('seo_keywords')->nullable();
+            $table->longText('article_sentence')->nullable();
+            $table->longText('photo_caption')->nullable();
+            $table->longText('seo_keywords')->nullable();
         });
     }
 }
