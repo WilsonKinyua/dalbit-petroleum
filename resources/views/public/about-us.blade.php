@@ -1,8 +1,9 @@
 @extends('layouts.public')
 
-@section('title')
-    - About Us
-@endsection
+@section('title') About Us @endsection
+@section('keywords') Dalbit,Member of JCG Holdings Ltd,East, Central and Southern Africa @endsection
+@section('description') Dalbit is a member of JCG Holdings Ltd. Established in 2002 in Kenya, we supply and distribute petroleum products and services across East, Central and Southern Africa. @endsection
+@section('image') {{ asset('images/about/8.png') }} @endsection
 
 @section('content')
 
@@ -66,9 +67,9 @@
                 </div>
                 <div class="col-md-6 align-self-center mb-md-0 mb-4">
                     <img class="img-fluid rounded" src="{{ asset('images/about/9.png') }}" alt=""">
+                            </div>
                         </div>
-                    </div>
-                    <div class="  row d-flex align-content-center flex-wrap mt-5 mb-3">
+                        <div class="   row d-flex align-content-center flex-wrap mt-5 mb-3">
                     <div class="col-md-6 align-self-center mb-md-0 mb-4">
                         <img class="img-fluid rounded" src="{{ asset('images/about/8.png') }}" alt="">
                     </div>

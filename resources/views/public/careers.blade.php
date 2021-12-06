@@ -1,8 +1,7 @@
 @extends('layouts.public')
 
-@section('title')
-    - Careers
-@endsection
+@section('title') Careers @endsection
+@section('description') A career at Dalbit is more than the work you do. We aim to build a strong, mutually beneficial, and lasting relationship with all our employees. Our team comprises diverse individuals with years of experience who collectively possess broad skill sets and global capability to deliver local solutions. @endsection
 
 @section('content')
     <div class="inner-header">

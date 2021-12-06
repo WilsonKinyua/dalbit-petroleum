@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title')
-    - Dalbit Trading
-@endsection
+@section('title') Dalbit Trading @endsection
+@section('keywords') @if (count($divisions) > 0) @foreach ($divisions as $key => $division)Dalbit {{ $division->country->name ?? '' }}, @endforeach @endif @endsection
+@section('image') {{ asset('images/1.jpg') }} @endsection
 
 @section('content')
     <div class="inner-header">

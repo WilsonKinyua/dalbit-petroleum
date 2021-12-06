@@ -1,8 +1,7 @@
 @extends('layouts.public')
 
-@section('title')
-    - Newsroom
-@endsection
+@section('title') Newsroom @endsection
+@section('keywords') Kenya, Tanzania, Congo, Sudan, Zambia, Zimbabwe, South Africa Petroleum Company, Africa, Energy Solutions, Transportation, Fuel Depots, Hospitality @endsection
 
 @section('content')
     <div class="inner-header">

@@ -1,8 +1,7 @@
 @extends('layouts.public')
 
-@section('title')
-    - Privacy Policy
-@endsection
+@section('title') Privacy Policy @endsection
+@section('description') DALBIT is committed to protecting the privacy and security of your personal information @endsection
 
 @section('content')
     <div class="inner-header">

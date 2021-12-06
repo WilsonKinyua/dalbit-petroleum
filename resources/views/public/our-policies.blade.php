@@ -1,8 +1,6 @@
 @extends('layouts.public')
 
-@section('title')
-    - Our Policies
-@endsection
+@section('title') Our Policies @endsection
 
 @section('content')
     <div class="inner-header">

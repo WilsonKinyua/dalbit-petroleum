@@ -1,8 +1,9 @@
 @extends('layouts.public')
 
-@section('title')
-    - {{ $newsroom->title }}
-@endsection
+@section('title') {{ $newsroom->title }} @endsection
+@section('image') {{ $newsroom->image->getUrl() ?? asset('images/logo.png')  }} @endsection
+@section('description') {!! $newsroom->article_sentence ?? Str::limit($newsroom->title, 200, '...') !!} @endsection
+@section('keywords') {{ $newsroom->seo_keywords ?? 'Dalbit, BSL Infrastructure, Fuel Depot, Sustainable Energy' }} @endsection
 
 @section('content')
     <div class="inner-header">

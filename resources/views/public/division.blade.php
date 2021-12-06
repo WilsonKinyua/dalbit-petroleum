@@ -1,8 +1,9 @@
 @extends('layouts.public')
 
-@section('title')
-    - {{ $division->division_type->title ?? '' }} | {{ $division->country->name ?? '' }}
-@endsection
+@section('title') {{ $division->division_type->title ?? '' }} | {{ $division->country->name ?? '' }} @endsection
+@section('image') {{ $division->country_image->getUrl() ?? '' }} @endsection
+@section('description') {!! $division->country_description ?? '' !!} @endsection
+
 
 @section('content')
     <div class="inner-header">

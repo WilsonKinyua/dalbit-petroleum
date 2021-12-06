@@ -1,8 +1,7 @@
 @extends('layouts.public')
 
-@section('title')
-    -  Cookie Policy
-@endsection
+@section('title') Cookie Policy @endsection
+@section('description') This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the site’s functionality. @endsection
 
 @section('content')
     <div class="inner-header">

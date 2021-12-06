@@ -4363,6 +4363,21 @@ ol.list li:last-child {
     background-color: #041160;
 }
 /* Banner 01 */
+/* .bg-slider {
+    background-color:#EDEDEF;
+    border-right: 50px solid #041160;
+    padding: 120px 0px;
+    transform: rotate(30deg);
+    margin-top: -100px;
+    margin-bottom: 200px;
+}
+
+.slider-content {
+    margin-top: 190px;
+    transform: rotate(-30deg);
+    margin-left: 58px;
+    margin-bottom: 200px;
+} */
 
 .slider-01 .swiper-slide {
     padding: 120px 0px;
@@ -4376,6 +4391,7 @@ ol.list li:last-child {
     font-size: 28px;
     line-height: 40px;
 }
+
 
 /* .slider-01 .slider-button {
   width: 200px;

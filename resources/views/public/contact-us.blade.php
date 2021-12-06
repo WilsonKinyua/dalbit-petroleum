@@ -1,8 +1,8 @@
 @extends('layouts.public')
 
-@section('title')
-    - Contact Us
-@endsection
+@section('title') Contact Us @endsection
+@section('keywords') Dalbit Affiliates,Dalbit Trading, Dalbit Licensees @endsection
+@section('description') We are here to help you. Please get in touch with us. @endsection
 
 @section('css')
     {{-- toastr --}}

@@ -1,8 +1,6 @@
 @extends('layouts.public')
 
-@section('title')
-    - Homepage | Fuel Supply & Distribution
-@endsection
+@section('title') Homepage | Fuel Supply & Distribution @endsection
 
 @section('content')
     <section class="slider-01">
@@ -11,11 +9,37 @@
                 @if ($sliders)
                     @foreach ($sliders as $key => $slider)
                         <div class="swiper-slide slide-02"
-                            style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat; ">
+                            {{-- <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="slider-background-color bg-slider">
+                                            <div class="slider-content">
+                                                <div class="">
+                                                    <div class="animated lead text-main-color text-bold"
+                                                        data-swiper-animation="fadeInUp" data-duration="2.0s"
+                                                        data-delay="1.0s">
+                                                        {!! $slider->caption ?? '' !!}
+                                                    </div>
+                                                    <p class="animated text-main-color"
+                                                        data-swiper-animation="fadeInUp" data-duration="2.0s"
+                                                        data-delay="1.5s">
+                                                        <a href="{{ $slider->link ?? '' }}"
+                                                            class="btn btn-sm btn-primary mt-2 slider-button">
+                                                            Read More
+                                                            <i class="btn-icon change-on-hover">
+                                                                Read More
+                                                                <i class="fas fa-long-arrow-alt-right"></i></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> --}}
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xl-7 col-lg-7 col-md-10">
-                                        <div class=" banner-content">
+                                        <div class="banner-content background-color">
                                             <div class="content">
                                                 <div class="animated lead text-main-color text-bold"
                                                     data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="1.0s">
@@ -40,9 +64,9 @@
                     @endforeach
                 @endif
             </div>
-            <div class="swiper-pagination-left-center">
-                <div class="swiper-pagination"></div>
-            </div>
+        </div>
+        <div class="swiper-pagination-left-center">
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -76,7 +100,8 @@
                                         @if ($division->slug == 'democratic-republic-of-the-congo')
                                             <a href="{{ route('division.country', $division->slug) }}">DRC (Licensee)</a>
                                         @elseif ($division->slug == 'south-sudan')
-                                            <a href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }} (Licensee)</a>
+                                            <a href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }}
+                                                (Licensee)</a>
                                         @else
                                             <a
                                                 href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }}</a>

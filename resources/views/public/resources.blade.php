@@ -1,8 +1,7 @@
 @extends('layouts.public')
 
-@section('title')
-    - Resources
-@endsection
+
+@section('title') Resources @endsection
 
 @section('content')
     <div class="inner-header">

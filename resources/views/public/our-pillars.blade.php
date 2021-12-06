@@ -1,8 +1,9 @@
 @extends('layouts.public')
 
-@section('title')
-    - Social Responsibility |
-@endsection
+
+@section('title') Social Responsibility | {{ $socialResponsibility->title ?? '' }}@endsection
+@section('image') {{ $socialResponsibility->image->getUrl() ?? asset('images/logo.png')  }} @endsection
+@section('description') {{ $socialResponsibility->description ?? '' }} @endsection
 
 @section('content')
     <div class="inner-header">

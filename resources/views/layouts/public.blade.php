@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-
-        {{-- * Created by Wilson Kinyua.
-        * Email: wilsonkinyuam@gmail.com
-        * User: wilson
-        * Date: 02/12/2021
-        * Time: 10:39 AM --}}
-
     <meta charset="utf-8">
-    <meta name="keywords" content="" />
-    <meta name="description" content="Dalbit Petroleum " />
-    <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-        Dalbit Petroleum @yield('title')
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Dalbit Petroleum - Fuel Supply & Distribution" />
+    <title> Dalbit Petroleum — @if (View::hasSection('title'))@yield('title')@else Dalbit Petroleum — Fuel Supply & Distribution @endif</title>
+    <meta name="keywords" content="@if (View::hasSection('keywords'))@yield('keywords')@else Kenya, Tanzania, Congo, Sudan, Zambia, Zimbabwe, South Africa Petroleum Company, Africa, Energy Solutions, Transportation, Fuel Depots, Hospitality @endif" />
+    <meta name="title" content="{{ trans('panel.site_title') }} —@if (View::hasSection('title'))@yield('title')@else Dalbit Petroleum — Fuel Supply & Distribution @endif">
+    <meta name="description" content="@if (View::hasSection('description'))@yield('description')@else Dalbit Petroleum is engaged in trading, supply, and distribution of petroleum products in Eastern, Southern Africa - Kenya, Tanzania, Uganda, Zambia, and Mozambique @endif">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ Request::url() }}">
+    <meta property="og:title" content="@if (View::hasSection('title'))@yield('title')@else Dalbit Petroleum — Fuel Supply & Distribution @endif">
+    <meta property="og:description" content="@if (View::hasSection('description'))@yield('description')@else Dalbit Petroleum is engaged in trading, supply, and distribution of petroleum products in Eastern, Southern Africa - Kenya, Tanzania, Uganda, Zambia, and Mozambique @endif">
+    <meta property="og:image" content="@if (View::hasSection('image'))@yield('image')@else{{ asset('images/logo.png') }}@endif">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ Request::url() }}">
+    <meta property="twitter:title" content="{{ trans('panel.site_title') }} —@if (View::hasSection('title'))@yield('title')@else Dalbit Petroleum — Fuel Supply & Distribution @endif">
+    <meta property="twitter:description" content="@if (View::hasSection('description'))@yield('description')@else Dalbit Petroleum is engaged in trading, supply, and distribution of petroleum products in Eastern, Southern Africa - Kenya, Tanzania, Uganda, Zambia, and Mozambique @endif">
+    <meta property="twitter:image" content="@if (View::hasSection('image'))@yield('image')@else{{ asset('images/logo.png') }} @endif">
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('images/favicon.ico') }}" />

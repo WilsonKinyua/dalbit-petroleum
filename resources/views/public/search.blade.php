@@ -1,8 +1,6 @@
 @extends('layouts.public')
 
-@section('title')
-    - Search Results For {{ $query }}
-@endsection
+@section('title') Search Results For {{ $query }} @endsection
 
 @section('content')
     <div class="inner-header">
