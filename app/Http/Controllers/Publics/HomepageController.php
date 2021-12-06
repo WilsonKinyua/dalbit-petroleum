@@ -134,7 +134,7 @@ class HomepageController extends Controller
     public function resources()
     {
         $resources = Resource::with(['media'])->get();
-        return view('public.resources',compact('resources'));
+        return view('public.resources', compact('resources'));
     }
 
     // privacyPolicy
@@ -147,5 +147,43 @@ class HomepageController extends Controller
     public function cookies()
     {
         return view('public.cookies');
+    }
+
+    // search
+    public function SearchQuery(Request $request)
+    {
+        if ($request->search == '') {
+            return redirect()->back();
+        }
+        return redirect()->route('search', ['q' => $request->search]);
+    }
+
+    public function searchPage($query)
+    {
+        if ($query == '') {
+            return redirect()->back();
+        }
+        // dd($q);
+        $divisions = Division::where('country_description', 'LIKE', '%' . $query . '%')
+            ->orWhere('operation_description', 'LIKE', '%' . $query . '%')
+            ->orWhere('transport_description', 'LIKE', '%' . $query . '%')
+            ->orWhere('infrastructure_storage_description', 'LIKE', '%' . $query . '%')
+            ->orWhere('slug', 'LIKE', '%' . $query . '%')
+            ->with(['division_type', 'country', 'contacts', 'media'])
+            ->get();
+        $socialResponsibilities = SocialResponsibility::where('title', 'LIKE', '%' . $query . '%')
+            ->orWhere('slug', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->with(['media'])->get();
+        // $newsrooms = Newsroom::where('title', 'LIKE', '%' . $query . '%')
+        //     ->orWhere('article_sentence', 'LIKE', '%' . $query . '%')
+        //     ->orWhere('description', 'LIKE', '%' . $query . '%')
+        //     ->with(['media'])->get();
+        // $contact_information = ContactInformation::where('name', 'LIKE', '%' . $search . '%')->with(['division', 'country'])->get();
+        // $resources = Resource::where('title', 'LIKE', '%' . $search . '%')->with(['media'])->get();
+        // return $divisions->toArray();
+        // check which has greater count and return that
+        // $count = count($divisions) + count($socialResponsibilities);
+        return view('public.search', compact('divisions', 'socialResponsibilities', 'query'));
     }
 }

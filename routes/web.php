@@ -20,6 +20,8 @@ Route::get('resources', 'Publics\HomepageController@resources')->name('resources
 Route::get('privacy-policy', 'Publics\HomepageController@privacyPolicy')->name('privacy.policy');
 Route::get('cookies', 'Publics\HomepageController@cookies')->name('cookies');
 Route::post('contact-message', 'Publics\HomepageController@addContactUsMessage')->name('contact.message');
+Route::post('search-all', 'Publics\HomepageController@SearchQuery')->name('search.all');
+Route::get('search/keyword={q}', 'Publics\HomepageController@searchPage')->name('search');
 
 
 // Route::redirect('/', '/login');
