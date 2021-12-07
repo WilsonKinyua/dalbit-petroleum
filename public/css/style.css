@@ -6,6 +6,11 @@
 @import url("swiper/swiper.min.css");
 @import url("animate/animate.min.css");
 @import url("magnific-popup/magnific-popup.css");
+
+:root {
+    --rounded: 0.5rem;
+    --text-lg: 1.25rem;
+}
 body {
     font-family: "Archivo", sans-serif;
     font-weight: 400;
@@ -3188,7 +3193,7 @@ ol.list li:last-child {
     padding: 58px 20px 20px 20px;
     margin-top: -50px;
     border-radius: 3px;
-    height: 150px;
+    height: 190px;
 }
 .case-study .case-study-item .case-study-info .case-study-title {
     margin-bottom: 0;
@@ -6466,4 +6471,26 @@ a.btn {
     float: left;
     width: 40%;
     padding: 1%;
+}
+
+.resources-card {
+    margin-bottom: 1rem;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    border-radius: var(--rounded);
+    padding: 1rem;
+    -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 4%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 7%);
+}
+
+.resources-card h4 {
+    font-size: var(--text-lg);
+    margin-top: 10px;
+}
+
+.resources-card a span {
+    padding-top: 0.25rem;
+    display: block;
+    border: 1px solid #fff;
+    color: #041160;
 }

@@ -139,7 +139,7 @@
                             <h4>Fuel Depots</h4>
                         </div>
                         <div class="col-md-3 border-right pb-2 pt-2">
-                            <span class="number display-4 text-primary" data-to="15" data-speed="1000">30</span>
+                            <span class="number display-4 text-primary" data-to="148" data-speed="1000">148</span>
                             <h4>Employees</h4>
                         </div>
                     </div>

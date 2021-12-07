@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-white text-uppercase">DALBIT {{ $division->country->name ?? '' }}</h1>
+                        <h3 class="text-white text-uppercase">{{ $division->country->name ?? '' }}</h3>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                                     <a href="{{ route('licensees.division') }}">Dalbit Licensees</a>
                                 @endif
                             </li>
-                            <li class="breadcrumb-item active text-capitalize"><span>Dalbit
+                            <li class="breadcrumb-item active text-capitalize"><span>
                                     {{ $division->country->name ?? '' }}</span></li>
                         </ol>
                     </div>
@@ -60,7 +60,7 @@
                                     aria-labelledby="v-pills-who-we-are-tab">
                                     <div class="row">
                                         <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h6 class="mb-3">Dalbit {{ $division->country->name ?? '' }}</h6>
+                                            <h6 class="mb-3">{{ $division->country->name ?? '' }}</h6>
                                             <p>
                                                 {!! $division->country_description ?? '' !!}
                                             </p>
