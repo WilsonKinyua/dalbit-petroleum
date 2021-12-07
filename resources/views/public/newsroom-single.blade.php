@@ -70,6 +70,11 @@
                                         @endif
                                     @endif
                                 </div>
+                                <style>
+                                    img {
+                                        max-width: 95%
+                                    }
+                                </style>
                                 @if (!$newsroom->description == '')
                                     <div class="blog-post-content">
                                         <div class="blog-post-details">

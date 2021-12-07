@@ -10,6 +10,7 @@ use App\Models\ContactInformation;
 use App\Models\Division;
 use App\Models\Newsroom;
 use App\Models\Resource;
+use App\Models\Search;
 use App\Models\Slider;
 use App\Models\SocialResponsibility;
 use Illuminate\Http\Request;
@@ -164,6 +165,7 @@ class HomepageController extends Controller
             return redirect()->back();
         }
         // dd($q);
+        $search_query = Search::create(['query' => $query]);
         $divisions = Division::where('country_description', 'LIKE', '%' . $query . '%')
             ->orWhere('operation_description', 'LIKE', '%' . $query . '%')
             ->orWhere('transport_description', 'LIKE', '%' . $query . '%')
