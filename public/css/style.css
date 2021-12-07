@@ -6478,13 +6478,13 @@ a.btn {
     border: 1px solid #dddddd;
     background-color: #fff;
     border-radius: var(--rounded);
-    padding: 1rem;
+    padding: 1.2rem;
     -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 4%);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 7%);
 }
 
 .resources-card h4 {
-    font-size: var(--text-lg);
+    font-size: 1.1em;
     margin-top: 10px;
 }
 

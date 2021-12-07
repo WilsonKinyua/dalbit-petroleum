@@ -9,8 +9,8 @@
             style="background-image: url({{ asset('images/1.jpg') }});">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 p-4">
-                        {{-- <h1 class="text-white text-uppercase">resources</h1> --}}
+                    <div class="col-lg-12">
+                        <h3 class="text-white text-uppercase">resources</h3>
                     </div>
                 </div>
             </div>
@@ -19,10 +19,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        {{-- <ol class="breadcrumb-list list-unstyled d-flex">
+                        <ol class="breadcrumb-list list-unstyled d-flex">
                             <li class="breadcrumb-item"><a href="/"><i class="fas fa-home mr-2"></i>Home</a></li>
                             <li class="breadcrumb-item active"><span>Resources</span></li>
-                        </ol> --}}
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                                     aria-labelledby="v-pills-who-we-are-tab">
                                     <div class="row">
                                         <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h3>Resources</h3>
+                                            <h3>Downloads</h3>
                                         </div>
                                         @if (count($resources) > 0)
                                             @foreach ($resources as $key => $resource)
