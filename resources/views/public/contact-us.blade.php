@@ -35,7 +35,12 @@
             </div>
         </div>
     </div>
-    <section class="space-ptb">
+    <style>
+        .contact-us-section p {
+            line-height: 13px;
+        }
+    </style>
+    <section class="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -45,26 +50,26 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="row mb-4">
+                    <div class="row mb-4 contact-us-section">
                         @if (count($dalbitAffiliates) > 0)
                             <div class="col-md-12">
                                 <h3 class="">Dalbit Affiliates</h3>
                             </div>
                             @foreach ($dalbitAffiliates as $contact)
                                 <div class="col-md-4 mt-1">
-                                    <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
+                                    <h6 class="text-uppercase"><strong> {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
-                                    <p>{!! $contact->location ?? '' !!}</p>
+                                    <p class="location">{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>
                                             <span class="text-primary ml-1">
-                                                {{ $contact->telephone ?? '' }}
+                                                {!! $contact->telephone ?? '' !!}
                                             </span>
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
                                         <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')
@@ -89,19 +94,19 @@
                             </div>
                             @foreach ($dalbitTrading as $contact)
                                 <div class="col-md-4 mt-1">
-                                    <h6 class="text-uppercase"><strong>Dalbit {{ $contact->country->name ?? '' }}</strong>
+                                    <h6 class="text-uppercase"><strong>{{ $contact->country->name ?? '' }}</strong>
                                     </h6>
                                     <p>{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>
                                             <span class="text-primary ml-1">
-                                                {{ $contact->telephone ?? '' }}
+                                                {!! $contact->telephone ?? '' !!}
                                             </span>
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
                                         <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')
@@ -126,20 +131,20 @@
                             </div>
                             @foreach ($dalbitLicensees as $contact)
                                 <div class="col-md-4 mt-1">
-                                    <h6 class="text-uppercase"><strong>Dalbit
+                                    <h6 class="text-uppercase"><strong>
                                             {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
                                     <p>{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>
                                             <span class="text-primary ml-1">
-                                                {{ $contact->telephone ?? '' }}
+                                                {!! $contact->telephone ?? '' !!}
                                             </span>
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
                                         <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{{ $contact->fax ?? '' }}
+                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')

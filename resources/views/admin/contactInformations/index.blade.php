@@ -70,16 +70,16 @@
                                 {{ $contactInformation->country->short_code ?? '' }}
                             </td>
                             <td>
-                                {{ $contactInformation->location ?? '' }}
+                                {!! $contactInformation->location ?? '' !!}
                             </td>
                             <td>
-                                {{ $contactInformation->telephone ?? '' }}
+                                {!! $contactInformation->telephone ?? '' !!}
                             </td>
                             <td>
-                                {{ $contactInformation->fax ?? '' }}
+                                {!! $contactInformation->fax ?? '' !!}
                             </td>
                             <td>
-                                {{ $contactInformation->email ?? '' }}
+                                {!! $contactInformation->email ?? '' !!}
                             </td>
                             <td>
                                 @can('contact_information_show')
@@ -152,7 +152,7 @@
 
   $.extend(true, $.fn.dataTable.defaults, {
     orderCellsTop: true,
-    order: [[ 3, 'asc' ]],
+    order: [[ 1, 'asc' ]],
     pageLength: 100,
   });
   let table = $('.datatable-ContactInformation:not(.ajaxTable)').DataTable({ buttons: dtButtons })
@@ -160,7 +160,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 })
 
 </script>
