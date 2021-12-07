@@ -68,7 +68,7 @@
                                           <ul class="list-unstyled mt-lg-1">
                                               <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>About
                                                           Us</span></a></li>
-                                              <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Vision
+                                              <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Our Vision
                                                           &
                                                           Mission</span></a></li>
                                               <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Our

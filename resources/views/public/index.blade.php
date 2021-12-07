@@ -78,9 +78,9 @@
                     <div class="section-title text-center">
                         <h2>Our Footprint</h2>
                         <p>
-                            As a diversified conglomerate, our interest in multiple industries indicates our determination
-                            to cater to
-                            our vision of providing basic needs.
+                            Dalbit, through its vast networks, affiliates, licensees, and partners, has undergone steady
+                            growth and currently has strong operational footprints throughout East, Central and Southern
+                            Africa.
                         </p>
                     </div>
                 </div>

@@ -2,7 +2,8 @@
 
 @section('title') About Us @endsection
 @section('keywords') Dalbit,Member of JCG Holdings Ltd,East, Central and Southern Africa @endsection
-@section('description') Dalbit is a member of JCG Holdings Ltd. Established in 2002 in Kenya, we supply and distribute petroleum products and services across East, Central and Southern Africa. @endsection
+@section('description') Dalbit is a member of JCG Holdings Ltd. Established in 2002 in Kenya, we supply and distribute
+petroleum products and services across East, Central and Southern Africa. @endsection
 @section('image') {{ asset('images/about/8.png') }} @endsection
 
 @section('content')
@@ -67,9 +68,9 @@
                 </div>
                 <div class="col-md-6 align-self-center mb-md-0 mb-4">
                     <img class="img-fluid rounded" src="{{ asset('images/about/9.png') }}" alt=""">
+                                </div>
                             </div>
-                        </div>
-                        <div class="   row d-flex align-content-center flex-wrap mt-5 mb-3">
+                            <div class="    row d-flex align-content-center flex-wrap mt-5 mb-3">
                     <div class="col-md-6 align-self-center mb-md-0 mb-4">
                         <img class="img-fluid rounded" src="{{ asset('images/about/8.png') }}" alt="">
                     </div>
@@ -106,7 +107,7 @@
                                         aria-labelledby="v-pills-who-we-are-tab">
                                         <div class="row">
                                             <div class="col-lg-12 mb-lg-0 mb-4">
-                                                <h6 class="mb-3">Vision</h6>
+                                                <h6 class="mb-3">Our Vision</h6>
                                                 <p>
                                                     To be the preferred Petroleum company in East, Central and Southern
                                                     Africa
@@ -158,11 +159,10 @@
                 <div class="col-md-6 col-sm-10">
                     <h4 class="text-white">Our Partners</h4>
                     <p class="m-0 text-white bg-main-color p-4 p-lg-5 rounded">
-                        Dalbit Petroleum partners with leading stakeholders within the transport and logistics industry to
-                        boost our
-                        own fleet of trucks to service our customers. As a total solutions company, we also partner with
-                        fuel
-                        infrastructure contractors to deliver world class facilities for our customers.
+                        Dalbit partners with leading stakeholders within the transport and logistics industry to boost our
+                        fleet of trucks to service our customers. <br>
+                        As a total energy solutions company, we partner with fuel infrastructure contractors to deliver
+                        world-class facilities for our customers.
                     </p>
                 </div>
             </div>
