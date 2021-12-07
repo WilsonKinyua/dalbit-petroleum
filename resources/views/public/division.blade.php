@@ -198,14 +198,14 @@
                                 </div>
                                 <div class="modal-body">
                                     <h6 class="mb-3">Headquarters</h6>
-                                    <p class="mb-1">{{ $division->contacts->location }}</p>
+                                    <p class="mb-1">{!! $division->contacts->location !!}</p>
                                     <div><strong>Telephone:</strong><span
-                                            class="text-primary ml-1">{{ $division->contacts->telephone }}</span>
+                                            class="text-primary ml-1">{!! $division->contacts->telephone !!}</span>
                                     </div>
                                     <div><strong>Fax:</strong><span
-                                            class="text-primary ml-1">{{ $division->contacts->fax }}</span></div>
+                                            class="text-primary ml-1">{!! $division->contacts->fax !!}</span></div>
                                     <div><strong>E-mail:</strong><span
-                                            class="text-primary ml-1">{{ $division->contacts->email }}</span>
+                                            class="text-primary ml-1">{!! $division->contacts->email !!}</span>
                                     </div>
                                 </div>
                             </div>

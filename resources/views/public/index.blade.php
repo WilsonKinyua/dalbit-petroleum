@@ -79,7 +79,7 @@
                         <h2>Our Footprint</h2>
                         <p>
                             Dalbit, through its vast networks, affiliates, licensees, and partners, has undergone steady
-                            growth and currently has strong operational footprints throughout East, Central and Southern
+                            growth and currently has a strong operational footprint throughout East, Central and Southern
                             Africa.
                         </p>
                     </div>
