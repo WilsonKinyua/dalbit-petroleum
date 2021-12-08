@@ -59,6 +59,7 @@
                                 <div class="col-md-4 mt-1">
                                     <h6 class="text-uppercase"><strong> {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
+                                    <p class="location">{!! $contact->country->company ?? '' !!}</p>
                                     <p class="location">{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>
@@ -96,6 +97,7 @@
                                 <div class="col-md-4 mt-1">
                                     <h6 class="text-uppercase"><strong>{{ $contact->country->name ?? '' }}</strong>
                                     </h6>
+                                    <p class="location">{!! $contact->country->company ?? '' !!}</p>
                                     <p>{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>
@@ -134,6 +136,7 @@
                                     <h6 class="text-uppercase"><strong>
                                             {{ $contact->country->name ?? '' }}</strong>
                                     </h6>
+                                    <p class="location">{!! $contact->country->company ?? '' !!}</p>
                                     <p>{!! $contact->location ?? '' !!}</p>
                                     @if (!$contact->telephone == '')
                                         <div><strong>Telephone:</strong>

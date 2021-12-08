@@ -49,6 +49,9 @@ class CountriesController extends Controller
             $table->editColumn('short_code', function ($row) {
                 return $row->short_code ? $row->short_code : '';
             });
+            $table->editColumn('company', function ($row) {
+                return $row->company ? $row->company : '';
+            });
 
             $table->rawColumns(['actions', 'placeholder']);
 

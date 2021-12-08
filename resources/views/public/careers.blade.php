@@ -33,7 +33,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-7">
                     <div class="section-title text-center mt-5">
-                        <h4>Available Jobs</h4>
+                        <h4>Work with Us</h4>
                         <p>
                             A career at Dalbit is more than the work you do. We aim to build a strong, mutually beneficial,
                             and

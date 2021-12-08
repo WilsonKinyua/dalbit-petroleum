@@ -31,11 +31,17 @@
                         {{ trans('cruds.country.fields.short_code') }}
                     </th>
                     <th>
+                        Company
+                    </th>
+                    <th>
                         &nbsp;
                     </th>
                 </tr>
                 <tr>
                     <td>
+                    </td>
+                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
                     <td>
                         <input class="search" type="text" placeholder="{{ trans('global.search') }}">
@@ -104,18 +110,19 @@
 { data: 'id', name: 'id' },
 { data: 'name', name: 'name' },
 { data: 'short_code', name: 'short_code' },
+{ data: 'company', name: 'company' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }
     ],
     orderCellsTop: true,
-    order: [[ 2, 'asc' ]],
-    pageLength: 100,
+    order: [[ 1, 'asc' ]],
+    pageLength: 1000,
   };
   let table = $('.datatable-Country').DataTable(dtOverrideGlobals);
   $('a[data-toggle="tab"]').on('shown.bs.tab click', function(e){
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 let visibleColumnsIndexes = null;
 $('.datatable thead').on('input', '.search', function () {
       let strict = $(this).attr('strict') || false

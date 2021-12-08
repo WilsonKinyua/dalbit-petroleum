@@ -60,7 +60,7 @@
                                     aria-labelledby="v-pills-who-we-are-tab">
                                     <div class="row">
                                         <div class="col-lg-12 mb-lg-0 mb-4">
-                                            <h6 class="mb-3">{{ $division->country->name ?? '' }}</h6>
+                                            <h6 class="mb-3">{{ $division->country->company ?? '' }}</h6>
                                             <p>
                                                 {!! $division->country_description ?? '' !!}
                                             </p>
@@ -77,7 +77,7 @@
     </section>
     <section class="space-ptb">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-start">
                 @if ($division->operation_image)
                     <div class="col-sm-6 col-lg-4 mb-4">
                         <div class="service-item">
