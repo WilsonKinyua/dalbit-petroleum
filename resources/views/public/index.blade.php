@@ -9,9 +9,10 @@
                 @if ($sliders)
                     @foreach ($sliders as $key => $slider)
                         <div class="swiper-slide slide-02"
-                            style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat; ">
-                            {{-- <div class="row">
-                                    <div class="col-md-6">
+                            style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-10 ">
                                         <div class="slider-background-color bg-slider">
                                             <div class="slider-content">
                                                 <div class="">
@@ -20,7 +21,7 @@
                                                         data-delay="1.0s">
                                                         {!! $slider->caption ?? '' !!}
                                                     </div>
-                                                    <p class="animated text-main-color"
+                                                    <p class="animated text-main-color button-caption"
                                                         data-swiper-animation="fadeInUp" data-duration="2.0s"
                                                         data-delay="1.5s">
                                                         <a href="{{ $slider->link ?? '' }}"
@@ -35,8 +36,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div> --}}
-                            <div class="container">
+                                </div>
+                            </div>
+                            {{-- <div class="container">
                                 <div class="row">
                                     <div class="col-xl-7 col-lg-7 col-md-10">
                                         <div class="banner-content background-color">
@@ -59,15 +61,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     @endforeach
                 @endif
             </div>
         </div>
-        <div class="swiper-pagination-left-center">
-            <div class="swiper-pagination"></div>
-        </div>
+       <div class="row">
+           <div class="col-md-12 text-center">
+            <div class="swiper-pagination-left-center">
+                <div class="swiper-pagination"></div>
+            </div>
+           </div>
+       </div>
     </section>
 
     <!-- countries -->
@@ -160,7 +166,7 @@
             <div class="row mr-3">
                 @if (count($newsrooms) > 0)
                     @foreach ($newsrooms as $key => $newsroom)
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="blog-post blog-post-style-2 mb-4 bg-white">
                                 <div class="blog-post-image">
                                     @if ($newsroom->image)

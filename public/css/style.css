@@ -4368,35 +4368,35 @@ ol.list li:last-child {
     background-color: #041160;
 }
 /* Banner 01 */
-/* .bg-slider {
+.bg-slider {
     background-color:#EDEDEF;
     border-right: 50px solid #041160;
-    padding: 120px 0px;
-    transform: rotate(30deg);
-    margin-top: -100px;
-    margin-bottom: 200px;
+    padding: 180px 0px;
+    transform: rotate(40deg);
+    margin-top: -600px;
+    margin-bottom: -100px;
+    margin-left: -500px !important;
 }
 
 .slider-content {
-    margin-top: 190px;
-    transform: rotate(-30deg);
-    margin-left: 58px;
-    margin-bottom: 200px;
-} */
-
-.slider-01 .swiper-slide {
-    padding: 120px 0px;
+    margin-top: 340px;
+    transform: rotate(-40deg);
+    margin-left: 565px;
+    margin-bottom: 280px;
 }
+
+/* .slider-01 .swiper-slide {
+    padding: 120px 0px;
+} */
 .slider-01 .swiper-slide .h1 {
     font-size: 48px;
     line-height: 48px;
 }
 
 .slider-01 .swiper-slide .lead {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
 }
-
 
 /* .slider-01 .slider-button {
   width: 200px;
@@ -4507,6 +4507,7 @@ ol.list li:last-child {
     margin-left: 660px;
     margin-top: -40px;
 }
+
 .swiper-pagination-left-center .swiper-pagination {
     position: relative;
 }
@@ -4786,10 +4787,10 @@ ol.list li:last-child {
         font-size: 38px;
         line-height: 38px;
     }
-    .slider-01 .swiper-slide .lead {
+    /* .slider-01 .swiper-slide .lead {
         font-size: 22px;
         line-height: 28px;
-    }
+    } */
     /* Home 02 */
     .slider-02 .swiper-slide {
         height: 330px;
@@ -4810,11 +4811,11 @@ ol.list li:last-child {
     .slider-03 .swiper-slide {
         padding: 60px 0px;
     }
-    .swiper-pagination-left-center
+    /* .swiper-pagination-left-center
         .swiper-pagination
         .swiper-pagination-bullet {
         display: none;
-    }
+    } */
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
@@ -6373,6 +6374,8 @@ a.footer-logo-text:focus {
     height: 60px !important;
     margin-top: 23px;
 }
+
+
 
 .search .search-button {
     display: block;

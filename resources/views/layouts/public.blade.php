@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dalbit Petroleum - Fuel Supply & Distribution" />
     <title> Dalbit Petroleum — @if (View::hasSection('title'))@yield('title')@else Dalbit Petroleum — Fuel Supply & Distribution @endif</title>
     <meta name="keywords" content="@if (View::hasSection('keywords'))@yield('keywords')@else Kenya, Tanzania, Congo, Sudan, Zambia, Zimbabwe, South Africa Petroleum Company, Africa, Energy Solutions, Transportation, Fuel Depots, Hospitality @endif" />
@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
     @yield('css')
 </head>
 
