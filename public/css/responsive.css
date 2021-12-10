@@ -145,3 +145,21 @@
     }
 }
 
+/* glance card */
+@media screen and (min-width: 700px) and (max-width: 820px) {
+    .glance-card span {
+        font-size: 38px !important;
+    }
+    .glance-card h4  {
+        font-size: 20px !important;
+    }
+
+}
+
+/* news */
+
+@media screen and (min-width: 1000px) and (max-width: 1270px) {
+    .blog-post.blog-post-style-2 .blog-post-content {
+        height: 100px;
+    }
+}

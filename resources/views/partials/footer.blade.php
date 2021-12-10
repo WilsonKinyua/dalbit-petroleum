@@ -17,7 +17,7 @@
              <div class="col-sm-6 col-lg-3">
                  <h6 class="text-white  mb-sm-4">Support</h6>
                  <div class="footer-link">
-                     <ul class="list-unstyled mb-0">
+                     <ul class="list-unstyled mb-0 text-capitalize">
                          <li><a href="{{ route('our.policies') }}">Our policies</a></li>
                          <li><a href="{{ route('resources') }}">Resources</a></li>
                          <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
