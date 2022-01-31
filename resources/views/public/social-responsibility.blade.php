@@ -1,7 +1,10 @@
 @extends('layouts.public')
 
 @section('title') Social Responsibility @endsection
-@section('description')  We believe that our investment in people and communities serves as a catalyst in unlocking the great potential of Africa. Across our affiliates, we are developing human skills and investing in projects and initiatives that offer equal opportunities to our communities. Our key focus areas include education, health, community and the conservation of wildlife and the environment. @endsection
+@section('description') We believe that our investment in people and communities serves as a catalyst in unlocking the
+    great potential of Africa. Across our affiliates, we are developing human skills and investing in projects and
+    initiatives that offer equal opportunities to our communities. Our key focus areas include education, health, community
+and the conservation of wildlife and the environment. @endsection
 
 @section('content')
     <div class="inner-header">
@@ -33,13 +36,10 @@
             <div class="row">
                 <div class="col-md-12 text-center mb-4 mt-4">
                     <p>
-                        We believe that our investment in people and communities serves as a catalyst in unlocking the
-                        great
-                        potential of Africa. Across our affiliates, we are developing human skills and investing in
-                        projects and
-                        initiatives that offer equal opportunities to our communities. Our key focus areas include
-                        education,
-                        health, community and the conservation of wildlife and the environment.
+                        We believe that our investment in people and communities serves as a catalyst in unlocking the great
+                        potential of Africa. Across our affiliates, we are developing human skills and investing in projects
+                        and initiatives that offer equal opportunities to our communities. Our key focus areas include
+                        education, health, community, and the conservation of wildlife and the environment.
                     </p>
                 </div>
             </div>
