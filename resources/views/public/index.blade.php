@@ -67,13 +67,13 @@
                 @endif
             </div>
         </div>
-       <div class="row">
-           <div class="col-md-12 text-center">
-            <div class="swiper-pagination-left-center">
-                <div class="swiper-pagination"></div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="swiper-pagination-left-center">
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-           </div>
-       </div>
+        </div>
     </section>
 
     <!-- countries -->
@@ -84,9 +84,8 @@
                     <div class="section-title text-center">
                         <h2>Our Footprint</h2>
                         <p>
-                            Dalbit, through its vast networks, affiliates, licensees, and partners, has undergone steady
-                            growth and currently has a strong operational footprint throughout East, Central and Southern
-                            Africa.
+                            Dalbit, through its vast networks, affiliates, licensees, and partners, has a strong operational
+                            footprint throughout East, Central, and Southern Africa.
                         </p>
                     </div>
                 </div>
