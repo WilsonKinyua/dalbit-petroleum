@@ -1,7 +1,7 @@
   <!--=================================
     Header -->
   <header class="header header-sticky default">
-      <div class="header-top d-none d-md-block">
+      <div class="header-top d-none d-md-block ">
           <div class="container">
               <div class="row d-flex align-items-center">
                   <div class="col-xl-3">
