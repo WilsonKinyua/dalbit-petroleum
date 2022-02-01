@@ -53,9 +53,9 @@
                                       <div class="col-sm-6">
                                           <h6 class="mb-0 mt-lg-1 nav-title">About us</h6>
                                           <p class="p-3">
-                                              Dalbit is a member of JCG Holdings Ltd. Established in 2002 in Kenya, we
-                                              supply and distribute
-                                              petroleum products and services across East, Central and Southern Africa.
+                                              Established in 2002, Dalbit supplies and distributes petroleum products
+                                              and
+                                              services across East, Central and Southern Africa.
                                               <a href="{{ route('about.us') }}" class="btn btn-sm btn-primary mt-2">
                                                   Read More <br>
                                                   <i class="btn-icon change-on-hover"> Read More <i
@@ -68,7 +68,8 @@
                                           <ul class="list-unstyled mt-lg-1">
                                               <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>About
                                                           Us</span></a></li>
-                                              <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Our Vision
+                                              <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Our
+                                                          Vision
                                                           &
                                                           Mission</span></a></li>
                                               <li><a class="dropdown-item" href="{{ route('about.us') }}"><span>Our

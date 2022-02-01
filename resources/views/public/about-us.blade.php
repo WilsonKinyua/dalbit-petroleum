@@ -53,7 +53,7 @@ East, Central and Southern Africa. @endsection
                                         <div class="col-lg-12 mb-lg-0 mb-4">
                                             <h6 class="mb-3">Who We Are</h6>
                                             <p>
-                                                <strong>Dalbit is a member of JCG Holdings Ltd</strong>.
+                                                {{-- <strong>Dalbit is a member of JCG Holdings Ltd</strong>. --}}
                                                 {{-- Established in 2002
                                                 in Kenya, we supply
                                                 and
