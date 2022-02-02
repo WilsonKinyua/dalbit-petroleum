@@ -218,8 +218,7 @@
     </section>
 
 @endsection
-@section('scripts')
-{{-- smooth scroll down --}}
+{{-- @section('scripts')
     <script>
         document.addEventListener('wheel', function(event) {
             //only vertical scroll
@@ -242,4 +241,4 @@
 
         }
     </script>
-@endsection
+@endsection --}}
