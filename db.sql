@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 31, 2022 at 06:47 AM
+-- Generation Time: Feb 03, 2022 at 12:36 AM
 -- Server version: 5.6.41-84.1
 -- PHP Version: 7.3.32
 
@@ -448,8 +448,6 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, 
 (28, 'App\\Models\\Division', 5, '8be1b3b8-d91e-4d14-a884-9a4a9479b880', 'transport_image', '61ad1405d03b9_operation_2', '61ad1405d03b9_operation_2.jpg', 'image/jpeg', 'public', 'public', 108479, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 23, '2021-12-05 19:33:58', '2021-12-05 19:33:58'),
 (29, 'App\\Models\\Division', 5, 'ff655792-a035-419a-a6d4-3550f1719cce', 'infrastructure_storage_image', '61ad14149f6f3_operation_3', '61ad14149f6f3_operation_3.jpg', 'image/jpeg', 'public', 'public', 91330, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 24, '2021-12-05 19:33:58', '2021-12-05 19:33:59'),
 (30, 'App\\Models\\Division', 6, 'fb18be90-b578-4c37-a77a-0e02e5dbf4b5', 'country_image', '61ad14d37ec12_1200px-Evening_Port_Louis', '61ad14d37ec12_1200px-Evening_Port_Louis.jpg', 'image/jpeg', 'public', 'public', 291604, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 25, '2021-12-05 19:38:18', '2021-12-05 19:38:19'),
-(31, 'App\\Models\\Division', 6, '41c3faa8-fa19-4f61-b63d-3347d5338fff', 'operation_image', '61ad14dd4366e_operation_1', '61ad14dd4366e_operation_1.jpg', 'image/jpeg', 'public', 'public', 95827, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 26, '2021-12-05 19:38:19', '2021-12-05 19:38:19'),
-(35, 'App\\Models\\Division', 7, '10eee70c-499e-413a-bac2-42381b8b9d6a', 'operation_image', '61ad156f22aa8_operation_1', '61ad156f22aa8_operation_1.jpg', 'image/jpeg', 'public', 'public', 95827, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 30, '2021-12-05 19:39:47', '2021-12-05 19:39:47'),
 (36, 'App\\Models\\Division', 8, '7efd9ace-6023-4e3a-b109-02c11e44ab1b', 'country_image', '61ad15c1c8431_31380037380_a9bf91f671_b', '61ad15c1c8431_31380037380_a9bf91f671_b.jpg', 'image/jpeg', 'public', 'public', 266925, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 31, '2021-12-05 19:41:22', '2021-12-05 19:41:23'),
 (37, 'App\\Models\\Division', 9, 'f22d8655-5a30-441b-ad36-c2288a5f2da1', 'country_image', '61ad1635ed447_201291085926296702_8', '61ad1635ed447_201291085926296702_8.jpg', 'image/jpeg', 'public', 'public', 172408, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 32, '2021-12-05 19:44:05', '2021-12-05 19:44:05'),
 (38, 'App\\Models\\Division', 7, '1f863722-04fd-45a2-9854-ce097a4a43af', 'country_image', '61ad16ff543d9_fmp-global-dubai_529750231', '61ad16ff543d9_fmp-global-dubai_529750231.jpg', 'image/jpeg', 'public', 'public', 327588, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 33, '2021-12-05 19:46:12', '2021-12-05 19:46:12'),
@@ -469,7 +467,9 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, 
 (52, 'App\\Models\\Newsroom', 5, '8407767d-253b-48cf-8fcf-e83a6132965b', 'image', '61af3c5ae6e68_unnamed', '61af3c5ae6e68_unnamed.jpg', 'image/jpeg', 'public', 'public', 51480, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 47, '2021-12-07 19:50:34', '2021-12-07 19:50:35'),
 (53, 'App\\Models\\Slider', 1, 'fbb60d37-40d9-4969-966c-f3b2fa07c0f6', 'image', '61b1f65f3ca3e_ndege', '61b1f65f3ca3e_ndege.jpg', 'image/jpeg', 'public', 'public', 766974, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 48, '2021-12-09 21:28:25', '2021-12-09 21:28:26'),
 (54, 'App\\Models\\Slider', 3, '1982ef8f-c152-4b0c-8dd1-fa790909fe98', 'image', '61b1f6a6de6a9_image-new', '61b1f6a6de6a9_image-new.png', 'image/jpeg', 'public', 'public', 603206, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 49, '2021-12-09 21:29:29', '2021-12-09 21:29:29'),
-(55, 'App\\Models\\Slider', 4, '2ebc2bec-d112-4eb7-ad2b-cd3485e59400', 'image', '61b1f6c968674_bongo-new', '61b1f6c968674_bongo-new.jpg', 'image/jpeg', 'public', 'public', 960907, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 50, '2021-12-09 21:30:04', '2021-12-09 21:30:05');
+(55, 'App\\Models\\Slider', 4, '2ebc2bec-d112-4eb7-ad2b-cd3485e59400', 'image', '61b1f6c968674_bongo-new', '61b1f6c968674_bongo-new.jpg', 'image/jpeg', 'public', 'public', 960907, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 50, '2021-12-09 21:30:04', '2021-12-09 21:30:05'),
+(56, 'App\\Models\\Division', 6, '1d035776-b47c-46fe-835c-5373863ae530', 'operation_image', '61fb76ef3877f_MicrosoftTeams-image (89) (2)', '61fb76ef3877f_MicrosoftTeams-image-(89)-(2).jpg', 'image/jpeg', 'public', 'public', 2399339, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 51, '2022-02-03 15:32:35', '2022-02-03 15:32:36'),
+(57, 'App\\Models\\Division', 7, '3cd85b1d-2d34-4fa7-9722-32f6198c0e08', 'operation_image', '61fb772713dff_MicrosoftTeams-image (89) (2)', '61fb772713dff_MicrosoftTeams-image-(89)-(2).jpg', 'image/jpeg', 'public', 'public', 2399339, '[]', '{\"generated_conversions\":{\"thumb\":true,\"preview\":true}}', '[]', 52, '2022-02-03 15:33:21', '2022-02-03 15:33:23');
 
 -- --------------------------------------------------------
 
@@ -863,7 +863,10 @@ INSERT INTO `searches` (`id`, `query`, `created_at`, `updated_at`, `deleted_at`)
 (4, 'gulu', '2021-12-13 18:47:54', '2021-12-13 18:47:54', NULL),
 (5, 'news', '2021-12-21 18:35:15', '2021-12-21 18:36:11', '2021-12-21 18:36:11'),
 (6, 'w', '2022-01-27 18:46:04', '2022-01-27 18:46:04', NULL),
-(7, 'w', '2022-01-27 18:46:33', '2022-01-27 18:46:33', NULL);
+(7, 'w', '2022-01-27 18:46:33', '2022-01-27 18:46:33', NULL),
+(8, 'news', '2022-02-02 15:26:34', '2022-02-02 15:26:34', NULL),
+(9, 'newsroom', '2022-02-02 15:26:42', '2022-02-02 15:26:42', NULL),
+(10, 'congo', '2022-02-02 15:26:49', '2022-02-02 15:26:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -1106,7 +1109,7 @@ ALTER TABLE `divisions`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -1148,7 +1151,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `searches`
 --
 ALTER TABLE `searches`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `sliders`
