@@ -4,7 +4,15 @@
 @section('image') {{ $division->country_image->getUrl() ?? '' }} @endsection
 @section('description') {!! $division->country_description ?? '' !!} @endsection
 
-
+@section('css')
+<style>
+    .service-item .service-img {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+    }
+</style>
+@endsection
 @section('content')
     <div class="inner-header">
         <div class="breadcrumb-title bg-overlay-black-80 bg-dark" data-jarallax='{"speed": 0.5}'
@@ -79,7 +87,7 @@
         <div class="container">
             <div class="row justify-content-start">
                 @if ($division->operation_image)
-                    <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-4 operations-img">
                         <div class="service-item">
                             <div class="service-img">
                                 <img class="img-fluid" src="{{ $division->operation_image->getUrl() }}" alt="">
@@ -198,15 +206,24 @@
                                 </div>
                                 <div class="modal-body">
                                     <h6 class="mb-3">Headquarters</h6>
-                                    <p class="mb-1">{!! $division->contacts->location !!}</p>
-                                    <div><strong>Telephone:</strong><span
-                                            class="text-primary ml-1">{!! $division->contacts->telephone !!}</span>
-                                    </div>
-                                    <div><strong>Fax:</strong><span class="text-primary ml-1">{!! $division->contacts->fax !!}</span>
-                                    </div>
-                                    <div><strong>E-mail:</strong><span
-                                            class="text-primary ml-1">{!! $division->contacts->email !!}</span>
-                                    </div>
+                                    @if ($division->contacts->location)
+                                        <p class="mb-1">{!! $division->contacts->location !!}</p>
+                                    @endif
+                                    @if ($division->contacts->telephone)
+                                        <div><strong>Telephone:</strong><span
+                                                class="text-primary ml-1">{!! $division->contacts->telephone !!}</span>
+                                        </div>
+                                    @endif
+                                    @if ($division->contacts->fax)
+                                        <div><strong>Fax:</strong><span
+                                                class="text-primary ml-1">{!! $division->contacts->fax !!}</span>
+                                        </div>
+                                    @endif
+                                    @if ($division->contacts->email)
+                                        <div><strong>E-mail:</strong><span
+                                                class="text-primary ml-1">{!! $division->contacts->email !!}</span>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
