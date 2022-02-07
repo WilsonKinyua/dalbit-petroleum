@@ -74,6 +74,11 @@
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <!--  Scripts -->
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
     @yield('scripts')
 </body>
 

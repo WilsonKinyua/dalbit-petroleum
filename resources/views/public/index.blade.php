@@ -93,7 +93,7 @@
             <div class="row text-center owl-carousel">
                 @if ($divisions)
                     @foreach ($divisions as $key => $division)
-                        <div class="item">
+                        <div class="item countries-carousel">
                             <div class="team team-style-1">
                                 <div class="team-img">
                                     @if ($division->country_image)
