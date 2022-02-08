@@ -11,6 +11,7 @@
         #phone {
             width: 400px;
         }
+
     </style>
 @endsection
 
@@ -170,22 +171,30 @@
     <section class="space-pb mt-3">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12 mt-4 mb-4">
+                    <h4>Talk To Us</h4>
+                </div>
                 <div class="col-md-12">
                     <form class="form-flat-style" method="POST" action="{{ route('contact.message') }}">
                         @csrf
                         <div class="row">
                             <div class="form-group col-md-4">
+                                <label for="">Full Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                             </div>
                             <div class="form-group col-md-4">
-                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                                <label for="">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" placeholder="Your Email"
+                                    name="email" required>
                             </div>
                             <div class="form-group col-md-4">
+                                <label for="">Phone Number</label>
                                 <input id="phone" type="tel" class="form-control" name="telephone_number">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12">
+                                <label for="">Message <span class="text-danger">*</span></label>
                                 <textarea rows="8" class="form-control" id="sector" placeholder="Your Message"
                                     name="message" required></textarea>
                             </div>

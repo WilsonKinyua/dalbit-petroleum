@@ -12,7 +12,7 @@
                             style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-10 ">
+                                    <div class="col-xl-7 col-lg-6 col-md-10 ">
                                         <div class="slider-background-color bg-slider">
                                             <div class="slider-content">
                                                 <div class="">

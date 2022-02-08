@@ -14,6 +14,7 @@ use App\Models\Search;
 use App\Models\Slider;
 use App\Models\SocialResponsibility;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomepageController extends Controller
 {
@@ -122,6 +123,25 @@ class HomepageController extends Controller
     public function addContactUsMessage(StoreContactRequest $request)
     {
         $contact_messages = Contact::create($request->all());
+
+        // send email
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'telephone_number' => $request->telephone_number,
+            'message' => $request->message,
+        ];
+
+        // Mail::send('emails.contact-us', $data, function ($message) use ($data) {
+        //     $message->from($data['email'], $data['name']);
+        //     $message->to('
+        //     wilsonkinyuam@gmail.com', 'Wilson Kinyua')->subject('New Message From Contact Us Page(Website)');
+        // });
+
+        // Mail::send('emails.contact-us', $data, function($message) use ($data) {
+        //     $message->to('wilsonkinyuam@gmail.com')->subject('New Message From Contact Us Page(Website)');
+        // });
+
         return redirect()->back()->with('success', 'Message Sent Successfully');
     }
 
