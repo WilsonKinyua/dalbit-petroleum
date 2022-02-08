@@ -7,6 +7,11 @@
 @section('css')
     {{-- toastr --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/toastr.min.css') }}">
+    <style>
+        #phone {
+            width: 400px;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -39,6 +44,7 @@
         .contact-us-section p {
             line-height: 13px;
         }
+
     </style>
     <section class="">
         <div class="container">
@@ -69,8 +75,7 @@
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
-                                        <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
+                                        <div><strong>FAX:</strong><span class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')
@@ -107,8 +112,7 @@
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
-                                        <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
+                                        <div><strong>FAX:</strong><span class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')
@@ -146,8 +150,7 @@
                                         </div>
                                     @endif
                                     @if (!$contact->fax == '')
-                                        <div><strong>FAX:</strong><span
-                                                class="text-primary ml-1">{!! $contact->fax ?? '' !!}
+                                        <div><strong>FAX:</strong><span class="text-primary ml-1">{!! $contact->fax ?? '' !!}
                                             </span></div>
                                     @endif
                                     @if (!$contact->email == '')
@@ -178,7 +181,7 @@
                                 <input type="email" class="form-control" placeholder="Your Email" name="email" required>
                             </div>
                             <div class="form-group col-md-4">
-                                <input type="text" class="form-control" placeholder="Your Number" name="telephone_number">
+                                <input id="phone" type="tel" class="form-control" name="telephone_number">
                             </div>
                         </div>
                         <div class="row">
@@ -237,4 +240,5 @@
             toastr.warning("{{ session('warning') }}");
         @endif
     </script>
+
 @endsection

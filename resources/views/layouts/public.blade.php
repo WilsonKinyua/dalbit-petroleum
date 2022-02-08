@@ -28,6 +28,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Roboto+Slab:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet">
+    {{-- tel --}}
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/css/intlTelInput.css'>
     {{-- owl carousel --}}
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
@@ -74,10 +76,22 @@
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <!--  Scripts -->
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script src='https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/intlTelInput.js'></script>
     <script>
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel();
         });
+    </script>
+    {{-- phone number --}}
+    <script>
+        var input = document.querySelector("#phone");
+        var iti = window.intlTelInput(input, {
+            // separateDialCode:true,
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
+        });
+
+        // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+        window.iti = iti;
     </script>
     @yield('scripts')
 </body>
