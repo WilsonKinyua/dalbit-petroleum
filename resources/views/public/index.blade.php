@@ -3,6 +3,7 @@
 @section('title') Homepage | Fuel Supply & Distribution @endsection
 
 @section('content')
+    {{-- display only on large screens --}}
     <section class="slider-01">
         <div id="main-slider" class="swiper-container">
             <div class="swiper-wrapper">
@@ -10,12 +11,12 @@
                     @foreach ($sliders as $key => $slider)
                         <div class="swiper-slide slide-02"
                             style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                            <div class="container">
+                            <div class="container display-large">
                                 <div class="row">
                                     <div class="col-xl-7 col-lg-6 col-md-10 ">
                                         <div class="slider-background-color bg-slider">
                                             <div class="slider-content">
-                                                <div class="">
+                                                <div class="mt-5">
                                                     <div class="animated lead text-main-color text-bold"
                                                         data-swiper-animation="fadeInUp" data-duration="2.0s"
                                                         data-delay="1.0s">
@@ -38,30 +39,31 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="container">
+                            <div class="container display-small">
                                 <div class="row">
-                                    <div class="col-xl-7 col-lg-7 col-md-10">
-                                        <div class="banner-content background-color">
-                                            <div class="content">
-                                                <div class="animated lead text-main-color text-bold"
-                                                    data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="1.0s">
-                                                    {!! $slider->caption ?? '' !!}
-                                                </div>
-                                                <p class="animated  mt-3 mb-4 text-main-color"
-                                                    data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="1.5s">
-                                                    <a href="{{ $slider->link ?? '' }}"
-                                                        class="btn btn-sm btn-primary mt-2 slider-button">
-                                                        Read More
-                                                        <i class="btn-icon change-on-hover">
+                                    <div class="col-md-12">
+                                        <div class="">
+                                            <div class="">
+                                                <div class="mobile-device-content">
+                                                    <div class="animated lead text-bold"
+                                                        data-swiper-animation="fadeInUp" data-duration="2.0s"
+                                                        data-delay="1.0s" style="padding-top: 30px">
+                                                        {!! $slider->caption ?? '' !!}
+                                                        <a href="{{ $slider->link ?? '' }}"
+                                                            class="btn btn-sm btn-primary mt-3 slider-button">
                                                             Read More
-                                                            <i class="fas fa-long-arrow-alt-right"></i></i>
-                                                    </a>
-                                                </p>
+                                                            <i class="btn-icon change-on-hover">
+                                                                Read More
+                                                                <i class="fas fa-long-arrow-alt-right"></i></i>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     @endforeach
                 @endif
@@ -75,7 +77,6 @@
             </div>
         </div>
     </section>
-
     <!-- countries -->
     <section class="space-ptb team-grid">
         <div class="container">

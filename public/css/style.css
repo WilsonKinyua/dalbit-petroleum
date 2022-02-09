@@ -3798,19 +3798,19 @@ ol.list li:last-child {
     margin-left: -500px !important;
 }
 .slider-content {
-    margin-top: 340px;
+    margin-top: 390px;
     transform: rotate(-40deg);
-    margin-left: 565px;
-    margin-bottom: 280px;
+    margin-left: 575px;
+    margin-bottom: 250px;
 }
 .slider-01 .swiper-slide .h1 {
-    font-size: 48px;
+    font-size: 52px;
     line-height: 48px;
 }
 .slider-01 .swiper-slide .lead {
-    font-size: 30px;
-    line-height: 40px;
-    word-spacing: 10px;
+    font-size: 32px;
+    line-height: 35px;
+    /* word-spacing: 10px; */
 }
 .slider-01 .swiper-pagination .swiper-pagination-bullet {
     background: #ffffff;
@@ -5604,3 +5604,12 @@ a.btn {
     border: 1px solid #fff;
     color: #041160;
 }
+
+.display-small {
+    display: none;
+}
+
+.display-large {
+    display:block;
+}
+
