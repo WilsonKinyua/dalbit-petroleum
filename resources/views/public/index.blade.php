@@ -49,6 +49,7 @@
                                                         data-swiper-animation="fadeInUp" data-duration="2.0s"
                                                         data-delay="1.0s" style="padding-top: 30px">
                                                         {!! $slider->caption ?? '' !!}
+                                                        <br>
                                                         <a href="{{ $slider->link ?? '' }}"
                                                             class="btn btn-sm btn-primary mt-3 slider-button">
                                                             Read More
