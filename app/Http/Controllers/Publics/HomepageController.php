@@ -129,18 +129,13 @@ class HomepageController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'telephone_number' => $request->telephone_number,
-            'message' => $request->message,
+            'message_body' => $request->message,
+            'created_at' => $contact_messages->created_at,
         ];
 
-        // Mail::send('emails.contact-us', $data, function ($message) use ($data) {
-        //     $message->from($data['email'], $data['name']);
-        //     $message->to('
-        //     wilsonkinyuam@gmail.com', 'Wilson Kinyua')->subject('New Message From Contact Us Page(Website)');
-        // });
-
-        // Mail::send('emails.contact-us', $data, function($message) use ($data) {
-        //     $message->to('wilsonkinyuam@gmail.com')->subject('New Message From Contact Us Page(Website)');
-        // });
+        Mail::send('emails.contact-us', $data, function($message) use ($data) {
+            $message->to('info@dalbitpetroleum.com')->subject('New Message From Contact Us Page');
+        });
 
         return redirect()->back()->with('success', 'Message Sent Successfully');
     }
