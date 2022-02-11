@@ -103,7 +103,11 @@
                     <table cellspacing="20" width="100%">
                         <tr>
                             <td>
-                                <p class="brand"><span>Dalbit </span>Petroleum</p>
+                                <p class="brand">
+                                    {{-- <span>Dalbit Petroleum</span> --}}
+                                     <img class=""
+                                        src="https://www.dalbitpetroleum.com/images/logo.png" alt="logo"
+                                        style="height: 100px;margin-left:350px;"></p>
                             </td>
                         </tr>
                         <tr>
