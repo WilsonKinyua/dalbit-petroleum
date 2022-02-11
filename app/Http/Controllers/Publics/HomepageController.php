@@ -192,15 +192,19 @@ class HomepageController extends Controller
             ->orWhere('slug', 'LIKE', '%' . $query . '%')
             ->orWhere('description', 'LIKE', '%' . $query . '%')
             ->with(['media'])->get();
-        // $newsrooms = Newsroom::where('title', 'LIKE', '%' . $query . '%')
-        //     ->orWhere('article_sentence', 'LIKE', '%' . $query . '%')
-        //     ->orWhere('description', 'LIKE', '%' . $query . '%')
-        //     ->with(['media'])->get();
+        $newsrooms = Newsroom::where('title', 'LIKE', '%' . $query . '%')
+            ->orWhere('article_sentence', 'LIKE', '%' . $query . '%')
+            ->orWhere('location', 'LIKE', '%' . $query . '%')
+            ->orWhere('seo_keywords', 'LIKE', '%' . $query . '%')
+            ->orWhere('slug', 'LIKE', '%' . $query . '%')
+            ->orWhere('photo_caption', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->with(['media'])->get();
         // $contact_information = ContactInformation::where('name', 'LIKE', '%' . $search . '%')->with(['division', 'country'])->get();
         // $resources = Resource::where('title', 'LIKE', '%' . $search . '%')->with(['media'])->get();
         // return $divisions->toArray();
         // check which has greater count and return that
         // $count = count($divisions) + count($socialResponsibilities);
-        return view('public.search', compact('divisions', 'socialResponsibilities', 'query'));
+        return view('public.search', compact('divisions', 'socialResponsibilities', 'query','newsrooms'));
     }
 }

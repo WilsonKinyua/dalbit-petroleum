@@ -68,11 +68,11 @@
         <div class="container">
             <div class="row justify-content-start">
                 @if (count($socialResponsibilities) > 0)
-                <div class="col-md-12">
-                    <div class="text-center mb-5">
-                        <h3>Social Responsibility</h3>
+                    <div class="col-md-12">
+                        <div class="text-center mb-5">
+                            <h3>Social Responsibility</h3>
+                        </div>
                     </div>
-                </div>
                     @foreach ($socialResponsibilities as $key => $socialResponsibility)
                         <div class="col-sm-6 col-lg-3 mb-4">
                             <div class="service-item">
@@ -87,6 +87,42 @@
                                 <div class="service-info">
                                     <h6 class="service-info-title"><a
                                             href="{{ route('our.pillars', $socialResponsibility->slug) }}">{{ $socialResponsibility->title ?? '' }}</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+            </div>
+        </div>
+    </section>
+    {{-- news search --}}
+    <section class="space-ptb case-study">
+        <div class="container">
+            <div class="row">
+                @if (count($newsrooms) > 0)
+                <div class="col-md-12">
+                    <div class="text-center mb-5">
+                        <h3>News</h3>
+                    </div>
+                </div>
+                    @foreach ($newsrooms as $key => $newsroom)
+                        <div class="col-lg-3 col-sm-6 pb-2 mb-4">
+                            <div class="case-study-item">
+                                <div class="case-study-img">
+                                    @if ($newsroom->image)
+                                        <img class="img-fluid" src="{{ $newsroom->image->getUrl() }}" alt="">
+                                    @endif
+                                    <a href="{{ route('news.single', $newsroom->slug ?? '') }}"><i
+                                            class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                                <div class="case-study-info">
+                                    @if (!$newsroom->location == '')
+                                        <a class="case-study-category"
+                                            href="{{ route('news.single', $newsroom->slug ?? '') }}">{{ $newsroom->location ?? '' }}</a>
+                                    @endif
+                                    <h6 class="case-study-title"><a
+                                            href="{{ route('news.single', $newsroom->slug ?? '') }}">{{ Str::limit($newsroom->title, 67, '...') ?? '' }}</a>
                                     </h6>
                                 </div>
                             </div>
