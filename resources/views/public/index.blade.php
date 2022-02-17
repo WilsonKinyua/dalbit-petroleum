@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title') Homepage | Fuel Supply & Distribution @endsection
+{{-- @section('title') Homepage | Fuel Supply & Distribution @endsection --}}
 
 @section('content')
     {{-- display only on large screens --}}
