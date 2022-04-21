@@ -1,7 +1,5 @@
 <?php
 
-
-
 // public routes
 Route::get('/', 'Publics\HomepageController@index')->name('public.home');
 Route::get('about-us', 'Publics\HomepageController@aboutUs')->name('about.us');

@@ -52,7 +52,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
-    {{-- <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFN79LRMTV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -63,7 +63,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-TFN79LRMTV');
-    </script> --}}
+    </script>
     @yield('css')
 </head>
 
