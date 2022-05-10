@@ -1,8 +1,14 @@
 @extends('layouts.public')
 
-@section('title') {{ $division->division_type->title ?? '' }} | {{ $division->country->name ?? '' }} @endsection
-@section('image') {{ $division->country_image->getUrl() ?? '' }} @endsection
-@section('description') {!! $division->country_description ?? '' !!} @endsection
+@section('title')
+    {{ $division->division_type->title ?? '' }} | {{ $division->country->name ?? '' }}
+@endsection
+@section('image')
+    {{ $division->country_image->getUrl() ?? '' }}
+@endsection
+@section('description')
+    {!! $division->country_description ?? '' !!}
+@endsection
 
 @section('css')
     <style>
@@ -13,6 +19,7 @@
         }
 
     </style>
+    <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
 @endsection
 @section('content')
     <div class="inner-header">
@@ -81,6 +88,25 @@
                         </div>
                     </div>
                 </div>
+                @if ($division->slug == 'democratic-republic-of-the-congo')
+                    <div class="col-lg-12 mt-5">
+                        <h5 class="text-uppercase">Bureau Veritas Certification</h5>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 mb-4">
+                        <div class="cert-wrapper">
+                            <a href="{{ asset('certs/1.jpeg') }}" data-fancybox="group" data-caption="" data-description="">
+                                <img src="{{ asset('certs/1.jpeg') }}" alt="ISO">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 mb-4">
+                        <div class="cert-wrapper">
+                            <a href="{{ asset('certs/2.jpeg') }}" data-fancybox="group" data-caption="" data-description="">
+                                <img src="{{ asset('certs/2.jpeg') }}" alt="ISO">
+                            </a>
+                        </div>
+                    </div>
+                @endif
                 @if ($division->transport_image === null && $division->infrastructure_storage_image === null)
                     @if ($division->operation_image)
                         <div class="col-md-4 align-self-center mb-md-0 mb-4 mt-5">
@@ -272,4 +298,7 @@
         </div>
     </section>
 
+@endsection
+@section('scripts')
+    <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 @endsection

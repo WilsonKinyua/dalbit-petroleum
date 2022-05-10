@@ -37,6 +37,12 @@ class HomepageController extends Controller
         return view('public.about-us');
     }
 
+    // 20 years of growth
+    public function yearsOfDalbit()
+    {
+        return view('public.celebration');
+    }
+
     // single division using slug
     public function division($slug)
     {
@@ -133,7 +139,7 @@ class HomepageController extends Controller
             'created_at' => $contact_messages->created_at,
         ];
 
-        Mail::send('emails.contact-us', $data, function($message) use ($data) {
+        Mail::send('emails.contact-us', $data, function ($message) use ($data) {
             $message->to('info@dalbitpetroleum.com')->subject('New Message From Contact Us Page');
         });
 
@@ -205,6 +211,6 @@ class HomepageController extends Controller
         // return $divisions->toArray();
         // check which has greater count and return that
         // $count = count($divisions) + count($socialResponsibilities);
-        return view('public.search', compact('divisions', 'socialResponsibilities', 'query','newsrooms'));
+        return view('public.search', compact('divisions', 'socialResponsibilities', 'query', 'newsrooms'));
     }
 }

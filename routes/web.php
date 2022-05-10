@@ -3,6 +3,7 @@
 // public routes
 Route::get('/', 'Publics\HomepageController@index')->name('public.home');
 Route::get('about-us', 'Publics\HomepageController@aboutUs')->name('about.us');
+Route::get('20-years-of-dalbit', 'Publics\HomepageController@yearsOfDalbit')->name('years.dalbit');
 Route::get('dalbit-affiliates', 'Publics\HomepageController@dalbitAffiliates')->name('affiliates.division');
 Route::get('dalbit-trading', 'Publics\HomepageController@dalbitTrading')->name('trading.division');
 Route::get('dalbit-licensees', 'Publics\HomepageController@dalbitLicensees')->name('licensees.division');
