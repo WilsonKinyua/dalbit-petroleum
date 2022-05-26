@@ -3822,8 +3822,8 @@ ol.list li:last-child {
     background-color: #041160;
 }
 .bg-slider {
-    background-color: #ededef;
-    border-right: 50px solid #041160;
+    /* background-color: #ededef; */
+    /* border-right: 50px solid #041160; */
     padding: 180px 0px;
     transform: rotate(40deg);
     margin-top: -600px;

@@ -27,7 +27,7 @@ class HomepageController extends Controller
     {
         $sliders = Slider::with(['media'])->get();
         $divisions = Division::with(['division_type', 'country', 'contacts', 'media'])->get();
-        $newsrooms = Newsroom::with(['media'])->limit(4)->get();
+        $newsrooms = Newsroom::with(['media'])->orderBy('id','desc')->limit(4)->get();
         return view('public.index', compact('sliders', 'divisions', 'newsrooms'));
     }
 
@@ -101,7 +101,7 @@ class HomepageController extends Controller
     // news
     public function news()
     {
-        $newsrooms = Newsroom::with(['media'])->get();
+        $newsrooms = Newsroom::with(['media'])->orderBy('id','desc')->get();
         return view('public.newsroom', compact('newsrooms'));
     }
 

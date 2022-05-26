@@ -10,7 +10,12 @@
                 @if ($sliders)
                     @foreach ($sliders as $key => $slider)
                         <div class="swiper-slide slide-02"
-                            style="background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            style
+                            =
+                            "
+                            background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;
+                            "
+                            >
                             <div class="container display-large">
                                 <div class="row">
                                     <div class="col-xl-7 col-lg-6 col-md-10 ">
