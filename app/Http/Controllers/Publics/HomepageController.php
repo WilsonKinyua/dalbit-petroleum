@@ -25,7 +25,7 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        $sliders = Slider::with(['media'])->get();
+        $sliders = Slider::with(['media'])->orderBy('id','desc')->get();
         $divisions = Division::with(['division_type', 'country', 'contacts', 'media'])->get();
         $newsrooms = Newsroom::with(['media'])->orderBy('id','desc')->limit(4)->get();
         return view('public.index', compact('sliders', 'divisions', 'newsrooms'));

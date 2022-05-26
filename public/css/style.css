@@ -3845,6 +3845,9 @@ ol.list li:last-child {
     line-height: 35px;
     /* word-spacing: 10px; */
 }
+.swiper-slide {
+    height: 490px;
+}
 .slider-01 .swiper-pagination .swiper-pagination-bullet {
     background: #ffffff;
 }
