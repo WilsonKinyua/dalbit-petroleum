@@ -3845,6 +3845,32 @@ ol.list li:last-child {
     line-height: 35px;
     /* word-spacing: 10px; */
 }
+.display-small img {
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.display-small .carousel-caption {
+    background-color: #0a1977b6;
+    padding: 5px 35px;
+    border-radius: 10px;
+    color: white;
+}
+
+.display-small .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 100px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
 .swiper-slide {
     height: 490px;
 }
@@ -5826,3 +5852,4 @@ a.btn {
         border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
 }
+

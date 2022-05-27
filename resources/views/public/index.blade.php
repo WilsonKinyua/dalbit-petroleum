@@ -4,19 +4,15 @@
 
 @section('content')
     {{-- display only on large screens --}}
-    <section class="slider-01">
+    <section class="slider-01 display-large">
         <div id="main-slider" class="swiper-container">
             <div class="swiper-wrapper">
                 @if ($sliders)
                     @foreach ($sliders as $key => $slider)
-                        <div class="swiper-slide slide-02"
-                            style
-                            =
-                            "
-                            background-image: url(@if ($slider->image){{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;
-                            "
-                            >
-                            <div class="container display-large">
+                        <div class="swiper-slide slide-02" style="
+                                                background-image: url(@if ($slider->image) {{ $slider->image->getUrl() }} @endif); background-size: cover; background-position: center; background-repeat: no-repeat;
+                                                ">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-xl-7 col-lg-6 col-md-10 ">
                                         <div class="slider-background-color bg-slider">
@@ -44,32 +40,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="container display-small">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="">
-                                            <div class="">
-                                                <div class="mobile-device-content">
-                                                    <div class="animated lead text-bold"
-                                                        data-swiper-animation="fadeInUp" data-duration="2.0s"
-                                                        data-delay="1.0s" style="padding-top: 30px">
-                                                        {!! $slider->caption ?? '' !!}
-                                                        <br>
-                                                        <a href="{{ $slider->link ?? '' }}"
-                                                            class="btn btn-sm btn-primary mt-3 slider-button">
-                                                            Read More
-                                                            <i class="btn-icon change-on-hover">
-                                                                Read More
-                                                                <i class="fas fa-long-arrow-alt-right"></i></i>
-                                                        </a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     @endforeach
                 @endif
@@ -83,6 +53,42 @@
             </div>
         </div>
     </section>
+    <div id="carouselExampleCaptions" class="carousel slide display-small" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('images/slider/mobile-1.png') }}" class="d-block w-100" alt="Slider">
+                <div class="carousel-caption">
+                    <p>Dalbit marks its 20-year anniversary by planting 1,000 trees at the<span class="text-primary">
+                            Mount Kenya Wildlife Conservancy.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/slider/mobile-bongo.jpg') }}" class="d-block w-100" alt="Slider">
+                <div class="carousel-caption">
+                    <p>Dalbit is a proud supporter of<br> the Mount Kenya Wildlife Conservancy<br> <span
+                        class="text-primary"> Mountain Bongo Breeding program.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/slider/1.png') }}" class="d-block w-100" alt="Slider">
+                <div class="carousel-caption">
+                    <p>We deliver to our customers wherever they are;<span class="text-primary"> our robust logistics team ensures we go deeper and further.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/slider/measurement.jpg') }}" class="d-block w-100" alt="Slider">
+                <div class="carousel-caption">
+                    <p>Fuelling solutions provide connectivity links as aircrafts<span class="text-primary"> refuel at the Gulu and Arua Airfields.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- countries -->
     <section class="space-ptb team-grid">
         <div class="container">
@@ -113,7 +119,8 @@
                                             <a href="{{ route('division.country', $division->slug) }}">DRC (Licensee)</a>
                                         @elseif ($division->slug == 'south-sudan')
                                             <a href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }}
-                                                (Licensee)</a>
+                                                (Licensee)
+                                            </a>
                                         @else
                                             <a
                                                 href="{{ route('division.country', $division->slug) }}">{{ $division->country->name ?? '' }}</a>
