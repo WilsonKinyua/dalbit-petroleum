@@ -4543,7 +4543,7 @@ ol.list li:last-child {
 @media (min-width: 1200px) {
     .container,
     .container-navbar {
-        max-width: 1300px;
+        max-width: 1350px;
     }
     .search .search-button {
         height: 30px;
@@ -5560,6 +5560,18 @@ a.footer-logo-text:focus {
     background-size: cover;
     padding: 50px;
 }
+
+.about-us-page .purpose h6 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    color: #272727;
+}
+.about-us-page .purpose p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #272727;
+}
 .about-us a {
     font-size: 13px;
     font-weight: 500;
@@ -5698,7 +5710,7 @@ a.btn {
     display: block;
 }
 
-.cert-wrapper{
+.cert-wrapper {
     height: 160px;
 }
 
@@ -5856,4 +5868,56 @@ a.btn {
         border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
 }
+
+.our-values {
+    background-color: #030349;
+    margin-top: 40px;
+    padding: 50px;
+    color: #fff;
+}
+
+.our-values h5, .our-values h3 {
+    color: #fff;
+}
+
+.our-values h5 {
+    color: #fdc300;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.our-values h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.our-values h6 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.our-values span {
+    color: #fdc300;
+    padding-right: 10px;
+}
+
+.our-values p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.faq-section {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    transition: all .7s ease-in-out;
+  }
+  
+ .answer {
+    display: none;
+ }
 
