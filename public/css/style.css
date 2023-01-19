@@ -3273,7 +3273,7 @@ ol.list li:last-child {
     transition: none;
 }
 .header .navbar-brand img {
-    height: 110px;
+    height: 70px;
     margin-left: -20px;
 }
 .header.is-sticky {
@@ -5684,6 +5684,10 @@ a.btn {
     display: block;
     border: 1px solid #fff;
     color: #041160;
+}
+
+.resources-card i {
+    font-size: 25px;
 }
 
 .display-small {

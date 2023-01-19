@@ -1,7 +1,9 @@
 @extends('layouts.public')
 
 
-@section('title') Resources @endsection
+@section('title')
+    Resources
+@endsection
 
 @section('content')
     <div class="inner-header">
@@ -47,17 +49,28 @@
                                                     <div class="d-flex justify-content-between">
                                                         <div>
                                                             <h4 class="main-theme-color">
-                                                                <a data-toggle="modal"
+                                                                {{-- <a data-toggle="modal"
                                                                     data-target="#resourcesModal{{ $resource->id }}"
+                                                                    title="Click to view details">{{ $resource->name ?? '' }}</a> --}}
+                                                                <a target="_blank" href="{{ $resource->file->getUrl() }}"
                                                                     title="Click to view details">{{ $resource->name ?? '' }}</a>
                                                             </h4>
                                                         </div>
-                                                        <div>
-                                                            <a href="{{ $resource->file->getUrl() }}"
-                                                                download="{{ $resource->name ?? '' }}"
-                                                                class="text-center">
+                                                        <div class="d-flex justify-content-between">
+                                                            {{-- <a href="{{ $resource->file->getUrl() }}"
+                                                                download="{{ $resource->name ?? '' }}" class="text-center">
                                                                 <div>
-                                                                    <img src="{{ asset('images/download.svg') }}" alt="">
+                                                                    <img src="{{ asset('images/download.svg') }}"
+                                                                        alt="">
+                                                                </div>
+                                                                <div>
+                                                                    <span class=" main-theme-color">Download</span>
+                                                                </div>
+                                                            </a> --}}
+                                                            <a href="{{ $resource->file->getUrl() }}"
+                                                                download="{{ $resource->name ?? '' }}" class="text-center">
+                                                                <div>
+                                                                    <i class="fa fa-download"></i>
                                                                 </div>
                                                                 <div>
                                                                     <span class=" main-theme-color">Download</span>
@@ -66,7 +79,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Modal -->
+                                                {{-- <!-- Modal -->
                                                 <div class="modal fade" id="resourcesModal{{ $resource->id }}"
                                                     tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
@@ -85,7 +98,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             @endforeach
                                         @else
                                             <div class="col-lg-12 mb-lg-0 mb-4 text-center">

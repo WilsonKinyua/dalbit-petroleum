@@ -26,7 +26,7 @@
                           <ul class="nav navbar-nav">
                               <li class="nav-item">
                                   <a target="_blank" class="navbar-brand jcg" href="https://www.januscontinental.com/">
-                                      <img class="" src="{{ asset('images/jcg.jpg') }}" alt="logo">
+                                      <img class="" src="{{ asset('images/JCG.jpeg') }}" alt="logo">
                                   </a>
                               </li>
                           </ul>
