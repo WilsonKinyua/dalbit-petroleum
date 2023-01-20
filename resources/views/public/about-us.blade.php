@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex align-content-center flex-wrap mt-5 mb-3 purpose">
+            {{-- <div class="row d-flex align-content-center flex-wrap mt-5 mb-3 purpose">
                 <div class="col-md-7 align-self-center">
                     <div class="row">
                         <div class="col-md-7 col-lg-8 col-xl-9">
@@ -140,7 +140,7 @@
                         src="https://www.januscontinental.com/_next/image?url=https%3A%2F%2Fcms.januscontinental.com%2Fmedia%2F3ijnihkm%2Frectangle-20534-1.png&w=1080&q=75"
                         alt="Delivering reliable, accessible and cleaner energy solutions that drive progress and impact everyday life">
                 </div>
-            </div>
+            </div> --}}
             {{-- <div class="row d-flex align-content-center flex-wrap mt-5 mb-3">
                 <div class="col-md-6 align-self-center mb-md-0 mb-4">
                     <img class="img-fluid rounded" src="{{ asset('images/about/8.png') }}" alt="">
@@ -235,8 +235,9 @@
                         <div class="col-md-12">
                             <div class="faq-section">
                                 <div class="question">
-                                    <div>
+                                    <div class="d-flex justify-content-between">
                                         <h6><span>01</span> Pursue excellence</h6>
+                                        <span><i class="fa fa-plus"></i></span>
                                     </div>
                                 </div>
                                 <div class="answer">
@@ -250,7 +251,10 @@
                         <div class="col-md-12">
                             <div class="faq-section">
                                 <div class="question">
-                                    <h6><span>02</span> Be entrepreneurial</h6>
+                                    <div class="d-flex justify-content-between">
+                                        <h6><span>02</span> Be entrepreneurial</h6>
+                                        <span><i class="fa fa-plus"></i></span>
+                                    </div>
                                 </div>
                                 <div class="answer">
                                     <p>
@@ -263,7 +267,10 @@
                         <div class="col-md-12">
                             <div class="faq-section">
                                 <div class="question">
-                                    <h6><span>03</span> Act with honour and integrity</h6>
+                                    <div class="d-flex justify-content-between">
+                                        <h6><span>03</span> Act with honour and integrity</h6>
+                                        <span><i class="fa fa-plus"></i></span>
+                                    </div>
                                 </div>
                                 <div class="answer">
                                     <p>
@@ -276,7 +283,10 @@
                         <div class="col-md-12">
                             <div class="faq-section">
                                 <div class="question">
-                                    <h6><span>04</span> Accelerate impact together</h6>
+                                    <div class="d-flex justify-content-between">
+                                        <h6><span>04</span> Accelerate impact together</h6>
+                                        <span><i class="fa fa-plus"></i></span>
+                                    </div>
                                 </div>
                                 <div class="answer">
                                     <p>
@@ -289,7 +299,10 @@
                         <div class="col-md-12">
                             <div class="faq-section">
                                 <div class="question">
-                                    <h6><span>05</span> Embrace responsibility</h6>
+                                    <div class="d-flex justify-content-between">
+                                        <h6><span>05</span> Embrace responsibility</h6>
+                                        <span><i class="fa fa-plus"></i></span>
+                                    </div>
                                 </div>
                                 <div class="answer">
                                     <p>
@@ -323,19 +336,13 @@
     </section>
 @endsection
 @section('scripts')
-    {{-- <script>
-        $(document).ready(function() {
-            $('.faq-section').hover(function() {
-                $(this).find('.answer').slideDown();
-            }, function() {
-                $(this).find('.answer').slideUp();
-            });
-        });
-    </script> --}}
     <script>
-        $(document).ready(function() {
-            $('.faq-section').on('mouseleave', function() {
-                $(this).find('.answer').hide();
+        $('.faq-section').each(function() {
+            var question = $(this).find('.question');
+            var answer = $(this).find('.answer');
+            answer.hide();
+            question.hover(function() {
+                answer.slideToggle();
             });
         });
     </script>
