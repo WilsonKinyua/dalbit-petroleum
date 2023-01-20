@@ -5871,7 +5871,7 @@ a.btn {
 
 .our-values {
     background-color: #030349;
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 50px;
     color: #fff;
 }
@@ -5921,3 +5921,34 @@ a.btn {
     display: none;
  }
 
+/* .our-purpose {
+    background-image: url('../images/about/9.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+background-position-y: center;
+    background-size: cover;
+} */
+
+.our-purpose .card {
+    border: none;
+    background-color: #EDEDEA;
+    border-radius: none;
+    padding: 50px;
+    margin-top: 350px;
+    /* margin: 120px 0px 0px 0px; */
+    margin-bottom: -70px;
+}
+
+.our-purpose h5 {
+    color: #333333;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.our-purpose p{
+    color: #82868a;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
