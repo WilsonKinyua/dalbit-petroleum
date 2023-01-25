@@ -58,25 +58,12 @@
                     <div class="col-md-6 align-self-center mb-md-0 mb-4">
                         <img class="img-fluid rounded" src="{{ asset('images/about/9.png') }}" alt="">
                     </div>
-                    <div class="col-md-6 align-self-center pl-3 pl-lg-5">
-                        <div class="row">
-                            <div class="col-md-7 col-lg-8 col-xl-9">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-who-we-are" role="tabpanel"
-                                        aria-labelledby="v-pills-who-we-are-tab">
-                                        <div class="row">
-                                            <div class="col-lg-12 mb-lg-0 mb-4">
-                                                <h6 class="mb-3">Our Purpose</h6>
-                                                <p>
-                                                    Delivering reliable, accessible and cleaner energy solutions
-                                                    that drive progress and impact everyday life
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6 align-self-center pl-lg-5">
+                        <h6 class="mb-3">Our Purpose</h6>
+                        <h3>
+                            Delivering reliable, accessible and cleaner energy solutions
+                            that drive progress and impact everyday life.
+                        </h3>
                     </div>
                 </div>
                 {{-- <div class="row d-flex align-content-center flex-wrap mt-5 mb-3 purpose">

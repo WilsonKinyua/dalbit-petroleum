@@ -5572,11 +5572,11 @@ a.footer-logo-text:focus {
     line-height: 22px;
     color: #272727;
 } */
-/* .about-us-page .purpose h3 {
+.about-us-page .purpose h3 {
     font-size: 36px;
     line-height: 43px;
     font-weight: 700;
-} */
+}
 .about-us a {
     font-size: 13px;
     font-weight: 500;
@@ -5909,7 +5909,7 @@ a.btn {
     padding-right: 10px;
 }
 
-.our-values p,.about-us-page .purpose p {
+.our-values p {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
