@@ -3183,7 +3183,7 @@ ol.list li:last-child {
 }
 .header {
     background: #ffffff;
-    z-index: 2;
+    z-index: 200;
     position: relative;
     -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.02);
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.02);
